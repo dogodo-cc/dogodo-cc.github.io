@@ -178,7 +178,7 @@ function importExcel(event) {
         filename: file.name,
         downloadUrl: '',
     });
-   
+
     mockImportProcess(); // 读取文件没有实际进度，模拟一个
 
     if (true) {
@@ -238,14 +238,13 @@ function mockImportProcess() {
     }
 
     & .process {
-        margin-bottom: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     & .download-section {
-        margin: 0 auto 60px;
+        margin: 80px auto 0;
         width: 500px;
 
         & fieldset {
@@ -271,7 +270,7 @@ function mockImportProcess() {
     }
 
     & .VPFeatures {
-        padding-top: 100px;
+        margin-top: 160px;
         text-align: left;
     }
 }
