@@ -1,10 +1,10 @@
 <template>
     <div class="tel-check">
         <div class="logo-section">
-            <img width="200px" src="./logo-konghao.png" alt="" />
+            <img width="200px" src="./assets/logo-konghao.png" alt="" />
         </div>
         <div class="import-section">
-            <VPButton @click="clickImportBtn" :theme="buttonType" :text="buttonText" size="medium"> </VPButton>
+            <VPButton :class="{ wait: isChecking }" @click="clickImportBtn" :theme="buttonType" :text="buttonText" size="medium"> </VPButton>
             <input :disabled="isChecking" type="file" @change="importExcel" id="excelFileInput" accept=".xls,.xlsx" style="display: none" />
         </div>
         <div class="process">
@@ -73,7 +73,8 @@ class WorkerManger {
         this.init();
     }
     init() {
-        this.worker = new Worker('./worker/worker-xlsx.js');
+        // https://cn.vitejs.dev/guide/features.html#web-workers
+        this.worker = new Worker(new URL('./worker-xlsx.js', import.meta.url), { type: 'module' });
 
         // 监听来自 worker 的消息
         this.worker.onmessage = function (e) {
@@ -235,6 +236,9 @@ function mockImportProcess() {
 
     & .import-section {
         margin-bottom: 60px;
+        & button.wait {
+            cursor: wait;
+        }
     }
 
     & .process {

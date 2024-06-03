@@ -41,3 +41,46 @@ export function download(url, filename) {
     a.click();
     document.body.removeChild(a);
 }
+
+export async function fetchPost(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-APISpace-Token': 'cdf18gvycalkmeqnqzqz7tm4xx04e3m0',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: Object.entries(data)
+            .map(([k, v]) => {
+                return `${encodeURIComponent(k)}=${encodeURIComponent(v)}`;
+            })
+            .join('&'),
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+}
+
+export const regTelString = /(电话|手机｜)/;
+export const regTel = /^1[3-9]\d{9}$/;
+
+// 通过第一行 或者 第二行的数据 判断出手机号码是在第几列
+export function getTelIndex(firstRow = [], secondRow = []) {
+    let index = firstRow.findIndex((v) => regTelString.test(v.trim()));
+    if (index === -1) {
+        index = secondRow.findIndex((v) => regTel.test(v));
+    }
+    return index;
+}
+
+export const codeMap = {
+    0: '空号',
+    1: '实号',
+    2: '停机号',
+    3: '库无',
+    4: '沉默号',
+    5: '风险号',
+};

@@ -1,5 +1,10 @@
-self.importScripts('./xlsx.full.min.js'); // https://docs.sheetjs.com/
-self.importScripts('./worker-utils.js');
+// 经典的导入方式，代码无法共用，采用 type: module 的方式
+// self.importScripts('./xlsx.full.min.js');
+// self.importScripts('./worker-utils.js');
+
+// https://docs.sheetjs.com/
+import * as XLSX from 'xlsx';
+import { eventMap, getTelIndex, regTel, codeMap, fetchPost } from './utils';
 
 self.addEventListener(
     'message',
@@ -25,7 +30,7 @@ async function readXlsxFile(data) {
     console.time('===> readxlsx');
     var workbook = XLSX.read(data, { type: 'buffer' });
 
-    var sheetName = workbook.SheetNames[1]; // 获取第几个 sheet
+    var sheetName = workbook.SheetNames[0]; // 获取第几个 sheet
     var sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 }); // 转为 json 二维数组
 
     self.postMessage({ type: eventMap['read-xlsx-success'] });
