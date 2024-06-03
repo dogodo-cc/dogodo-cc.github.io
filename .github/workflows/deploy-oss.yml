@@ -21,7 +21,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: 22
-                  cache: 'npm'
+                  cache: npm
 
             - name: 安装依赖
               run: npm install
@@ -33,8 +33,8 @@ jobs:
               uses: manyuanrong/setup-ossutil@v3.0
               with:
                   endpoint: 'oss-cn-hangzhou.aliyuncs.com'
-                  access-key-id: ${{ secrets.OSS_ID }}
-                  access-key-secret: ${{ secrets.OSS_SECRET }}
+                  access-key-id: ${{ secrets.AccessKeyId }}
+                  access-key-secret: ${{ secrets.AccessKeySecret }}
 
             - name: 项目部署 - docs
-              run: ossutil cp -rf ./docs/.vitepress/dist oss://website-cocos-fe/
+              run: ossutil cp -rf ./docs/.vitepress/dist oss://90s/
