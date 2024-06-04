@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>香港20年记事簿</title>
+  <meta name="viewport" content="">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="renderer" content="webkit" />
+  <meta name="x5-page-mode" content="app" />
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="./src/easeljs.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body onload="init();">
+  <audio id="auBgm" preload="preload" autoplay="autoplay" loop="loop" src="./bgm-0.mp3"></audio>
+  <div id="main">
+    <canvas id="mainView" width="" height=""></canvas>
+  </div>
+  <script type="text/javascript" src="./src/data.js"></script>
+  <script type="text/javascript" src="./src/app.js"></script>
+  <script type="text/javascript">
+    var _wxShareConfig = {
+      title: '香港20年记事簿|新浪新闻', // 分享标题
+      desc: '今年是香港回归20周年，这20年从经济、政治等层面都发生了太多事情，在纪念日来临之前，我们不妨穿越回到那些影响了香港进程的一个个现场。', // 分享描述
+      link: 'http://news.sina.cn/zt_d/hongkong20', // 分享链接
+      imgUrl: 'http://n.sinaimg.cn/news/hongkong20/img/forshare.jpg', // 分享图标
+      type: '', // 分享类型,music、video或link，不填默认为link
+      dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+    }
+  </script>
+
+</body>
+
+</html>

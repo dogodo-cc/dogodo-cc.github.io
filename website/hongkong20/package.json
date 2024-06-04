@@ -1,0 +1,8 @@
+{
+  "name": "@90s/hongkong20",
+  "version": "1.0.0",
+  "description": "香港回归20周年 http://news.sina.cn/zt_d/hongkong20",
+  "scripts": {
+    "dev": "vite"
+  }
+}

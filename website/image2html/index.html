@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .nav {
+      box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+      cursor: pointer;
+      position: fixed;
+      right: 0;
+      top: 50%;
+      background-color: #fff;
+      transform: translateY(-50%);
+      transition: transform .4s;
+      width: 160px;
+      user-select: none;
+    }
+
+    .nav.on {
+      transform: translate(100%, -50%);
+    }
+
+    .nav li {
+      list-style: none;
+      font-weight: bold;
+      line-height: 30px;
+      font-size: 12px;
+      color: #000;
+      position: relative;
+      text-indent: 15px;
+    }
+
+    .nav li span {
+      display: block;
+      height: 30px;
+      width: 100%;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nav li .sub span.current::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      left: 20px;
+      background-color: #3c3c3c;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    .nav li span:hover {
+      background-color: #ccc;
+    }
+
+    .nav li span i {
+      display: inline-block;
+      border-radius: 50%;
+      text-indent: 0;
+      margin-left: 25px;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      font-size: 12px;
+      font-weight: lighter;
+      pointer-events: none;
+    }
+
+    .nav li .sub {
+      max-height: 0;
+      overflow: hidden;
+      transition: all .4s;
+    }
+
+    .nav li .sub li {
+      text-indent: 35px;
+      font-weight: normal;
+    }
+
+    .nav li.on {
+      background-color: #eee;
+    }
+
+    .nav li.on .sub {
+      max-height: 210px;
+    }
+
+    .nav .switch {
+      position: absolute;
+      transform: translateX(-100%);
+      left: 0;
+      height: 24px;
+      line-height: 24px;
+      top: 0;
+      color: #fff;
+      background-color: blue;
+      cursor: pointer;
+      padding: 0 6px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+<img id="img" src="" alt="">
+<ul class="nav">
+  <span class="switch">收起</span>
+</ul>
+<script type="module">
+  import {data, project } from './data.js';
+  const nav = document.querySelector('.nav');
+  const img = document.getElementById('img');
+  img.src = `./${project}/${data[0].name}/${data[0].child[0]}`; // 默认第一张
+
+  // 预加载图片
+  const downloadImage = (url) => {
+    const image = new Image();
+    image.onload = () => {
+      // console.log(url)
+    }
+    image.onerror = () => {};
+    image.src = url;
+}
+
+  
+  let _html = '';
+
+  // 生成二级菜单
+  function getChild(items, name) {
+    let html = "";
+    items.forEach(function (item) {
+      let src = `./${project}/${name}/${item}`;
+      downloadImage(src);
+      html += `<li class="sub-li">
+                <span class="hasImg" title="${item.split('.')[0]}" data-src="${src}">
+                  ${item.split('.')[0]}
+                </span>
+              </li>`;
+    });
+    return html;
+  }
+
+  data.forEach(item => {
+    let li = "";
+
+    // 判断如果有多个子菜单
+    if (item.child.length > 1) {
+      let ulHtml = getChild(item.child, item.name);
+      li = `<li class="nav-li">
+              <span class="nav-span">
+                ${item.name.replace(/\d+/g, '')}<i>${item.child.length}</i>
+              </span>
+              <ul class="sub">${ulHtml}</ul>
+            </li>`;
+    } else {
+      let src = `./${project}/${item.name}/${item.child[0]}`;
+      li = `<li class="nav-li">
+              <span class="hasImg" data-src="${src}">
+                ${item.name.replace(/\d+/g, '')}
+              </span>
+            </li>`;
+      downloadImage(src)
+    }
+    _html += li;
+  });
+
+  nav.innerHTML += _html;
+
+  nav.addEventListener('click', function (e) {
+    let elem = e.target;
+
+    // 判断是保存了图片路径的span
+    if (elem.nodeName.toUpperCase() === "SPAN" && elem.classList.contains('hasImg')) {
+      let src = elem.getAttribute('data-src');
+      img.setAttribute('src', src);
+
+      let parentLi = getParents(elem, 'nav-li');
+
+      removeCurrent();
+      elem.classList.add('current');
+
+      if (!parentLi.classList.contains('on')) {
+        parentLi.classList.add('on');
+
+        let siblings = getSiblings(parentLi);
+        siblings.forEach(function (li) {
+          li.classList.remove('on');
+        })
+      }
+    }
+
+    // 展开与收起二级
+    if (elem.nodeName.toUpperCase() === "SPAN" && elem.classList.contains('nav-span')) {
+      let parentLi = getParents(elem, 'nav-li');
+      if (parentLi.classList.contains('on')) {
+        parentLi.classList.remove('on');
+      } else {
+        parentLi.classList.add('on');
+        let siblings = getSiblings(parentLi);
+        siblings.forEach(function (li) {
+          li.classList.remove('on');
+        })
+      }
+    }
+
+    // 展开收起按钮
+    if (elem.nodeName.toUpperCase() === "SPAN" && elem.classList.contains('switch')) {
+      nav.classList.toggle('on');
+      elem.innerText = elem.innerText === '收起' ? '展开' : '收起';
+    }
+  });
+
+  // 删除span上的current
+  function removeCurrent() {
+    let spans = nav.querySelectorAll('.hasImg');
+    [].slice.call(spans).forEach(o => {
+      o.classList.remove('current');
+    });
+  }
+
+  // 祖先元素
+  function getParents(elem, className) {
+    let parent = null;
+    let _p = elem.parentNode;
+    while (_p) {
+      if (_p.classList.contains(className)) {
+        parent = _p;
+        break;
+      } else {
+        _p = _p.parentNode;
+      }
+    }
+    return parent;
+  }
+
+  // 兄弟元素
+  function getSiblings(o) {
+    let a = [];
+    let p = o.previousSibling;
+    while (p) {
+      if (p.nodeType === 1) {
+        a.push(p);
+      }
+      p = p.previousSibling;
+    }
+    a.reverse();
+    let n = o.nextSibling;
+    while (n) {
+      if (n.nodeType === 1) {
+        a.push(n);
+      }
+      n = n.nextSibling;
+    }
+    return a;
+  }
+
+  // 展开 收起 快捷键
+  document.addEventListener('keydown',(e) => {
+    if(e.keyCode === 32){
+      e.preventDefault();
+      e.stopPropagation();
+      document.querySelector('.switch').click();
+    }
+
+    if(e.keyCode === 37){ // 左
+      next(e, 'previousSibling');
+    }
+
+    if(e.keyCode === 39){ // 右
+      next(e, 'nextSibling')
+    }
+  })
+
+  function next(e, dir = 'nextSibling') {
+    e.preventDefault();
+    e.stopPropagation();
+
+    let current = document.querySelector('.current');
+    if(!current) return;
+    let nextNode = current.parentNode[dir];
+    if(!nextNode) return;
+    nextNode.querySelector('span').click();
+  }
+
+</script>
+</body>
+</html>
