@@ -42,7 +42,7 @@ import { eventMap, download } from './utils';
 const features = reactive([
     {
         title: '智能操作',
-        details: '您只需导入表格即可自动化操作，无需粘贴号码，解析完成会生成新的表格供您下载，全程自动化',
+        details: '您只需导入表格即可自动化操作，无需复制粘贴号码，解析完成会生成新的表格供您下载，全程自动化',
     },
     {
         title: '准备率高',

@@ -14,7 +14,6 @@ jobs:
         if: contains(github.event.head_commit.message, 'docs')
         runs-on: ubuntu-latest
         steps:
-            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - uses: actions/checkout@v4
 
             - name: Setup Node.js environment
@@ -37,4 +36,6 @@ jobs:
                   access-key-secret: ${{ secrets.AccessKeySecret }}
 
             - name: 项目部署 - docs
+              # https://help.aliyun.com/zh/oss/developer-reference/rm?spm=a2c4g.11186623.0.0.39f646afKK0HiH
+              # 需要考虑先 rm 再 cp 否则文件会一直累加 （我们不需要版本控制，直接覆盖式发布即可）
               run: ossutil cp -rf ./docs/.vitepress/dist oss://90s/
