@@ -26,7 +26,7 @@ export default defineConfig({
                 text: '官网案例',
                 items: [
                     {
-                        text: '英合律师',
+                        text: '英合律师所',
                         link: 'https://90s.co/website/yinghe/',
                     },
                     {
