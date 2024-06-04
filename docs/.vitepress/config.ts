@@ -26,16 +26,16 @@ export default defineConfig({
                 text: '官网案例',
                 items: [
                     {
-                        text: '英合律师所',
-                        link: 'https://90s.co/website/yinghe/',
-                    },
-                    {
                         text: '建发时尚周',
                         link: 'https://90s.co/website/ifw/',
                     },
                     {
                         text: '晋江青商会',
                         link: 'https://90s.co/website/young/',
+                    },
+                    {
+                        text: '英合律师所',
+                        link: 'https://90s.co/website/yinghe/',
                     },
                 ],
             },
