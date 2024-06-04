@@ -22,6 +22,23 @@ export default defineConfig({
                 link: '/tools/tel',
                 activeMatch: '^/tools/',
             },
+            {
+                text: '官网案例',
+                items: [
+                    {
+                        text: '英合律师',
+                        link: 'https://90s.co/website/yinghe/',
+                    },
+                    {
+                        text: '建发时尚周',
+                        link: 'https://90s.co/website/ifw/',
+                    },
+                    {
+                        text: '晋江青商会',
+                        link: 'https://90s.co/website/young/',
+                    },
+                ],
+            },
         ],
 
         sidebar: {
