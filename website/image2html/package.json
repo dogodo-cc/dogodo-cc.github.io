@@ -1,8 +1,0 @@
-{
-  "name": "@website/image2html",
-  "version": "0.0.1",
-  "description": "将设计稿快速以网站的形式预览的小工具",
-  "scripts": {
-    "start": "node app.js"
-  }
-}
