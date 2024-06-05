@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import { getArticles } from './nav';
+import { getArticles, getWorks } from './nav';
 
 export default defineConfig({
     title: '甜甜的泥土',
@@ -16,6 +16,11 @@ export default defineConfig({
                 text: '文字',
                 link: '/article/',
                 activeMatch: '^/article/',
+            },
+            {
+                text: '工作',
+                link: '/work/',
+                activeMatch: '^/work/',
             },
             {
                 text: '工具',
@@ -43,6 +48,7 @@ export default defineConfig({
 
         sidebar: {
             '/article/': getArticles(),
+            '/work/': getWorks(),
         },
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/dogodo-cc' }],
