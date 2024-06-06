@@ -1,5 +1,9 @@
+---
+sidebar: false
+---
+
 <div class="page-about">
-    <img src="./assets/me.jpeg" /> 
+    <img src="./me.jpeg" /> 
 </div>
 
 <style>

@@ -11,7 +11,7 @@ hero:
     actions:
         - theme: brand
           text: 关于我
-          link: /about
+          link: /about/
 
 features:
     - title: 编程之路
