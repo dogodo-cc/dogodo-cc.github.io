@@ -1,0 +1,5 @@
+/* 上下页 按左右对半排列 */
+.prev-next {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+}
