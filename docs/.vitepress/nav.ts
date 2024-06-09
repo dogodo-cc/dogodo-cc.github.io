@@ -54,11 +54,17 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
             ],
         },
         {
-            text: '最佳实践',
-            items: [{ text: '埋点', link: '/work/pratices/埋点.md' }],
+            text: '稿定科技',
+            link: '/work/gaoding/index.md',
+            items: [
+                { text: '埋点', link: '/work/gaoding/埋点.md' },
+                { text: 'Eslint', link: '/work/gaoding/eslint.md' },
+                { text: '弃用css预处理语言', link: '/work/gaoding/弃用css预处理语言.md' },
+                { text: 'headless', link: '/work/gaoding/headless/index.md' },
+            ],
         },
         {
-            text: 'COCOS',
+            text: '雅基软件',
             link: '/work/cocos/index.md',
             items: [
                 { text: '软连接', link: '/work/cocos/symlink/index.md' },
@@ -66,9 +72,8 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
                 { text: '项目工程之断舍离', link: '/work/cocos/项目工程之断舍离.md' },
                 { text: 'web-components', link: '/work/cocos/web-components.md' },
                 { text: 'GitHub名称映射', link: '/work/cocos/github-ids/index.md' },
+                { text: 'Hello build', link: '/work/cocos/hello-build.md' },
                 { text: '短链接', link: '/work/cocos/short-url/index.md' },
-                { text: 'headless', link: '/work/cocos/headless/index.md' },
-                { text: '弃用css预处理语言', link: '/work/cocos/弃用css预处理语言.md' },
             ],
         },
     ];

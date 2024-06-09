@@ -11,6 +11,8 @@ export default defineConfig({
         ['meta', { name: 'keywords', content: '袁炜海,袁,炜海,yuanweihai,weihai,甜甜的泥土' }],
     ],
     themeConfig: {
+        // logo: { src: '/logo-black.png' },
+
         nav: [
             {
                 text: '文字',
@@ -27,23 +29,23 @@ export default defineConfig({
                 link: '/tools/tel',
                 activeMatch: '^/tools/',
             },
-            {
-                text: '官网案例',
-                items: [
-                    {
-                        text: '建发时尚周',
-                        link: 'https://90s.co/website/ifw/',
-                    },
-                    {
-                        text: '晋江青商会',
-                        link: 'https://90s.co/website/young/',
-                    },
-                    {
-                        text: '英合律师所',
-                        link: 'https://90s.co/website/yinghe/',
-                    },
-                ],
-            },
+            // {
+            //     text: '官网案例',
+            //     items: [
+            //         {
+            //             text: '建发时尚周',
+            //             link: 'https://90s.co/website/ifw/',
+            //         },
+            //         {
+            //             text: '晋江青商会',
+            //             link: 'https://90s.co/website/young/',
+            //         },
+            //         {
+            //             text: '英合律师所',
+            //             link: 'https://90s.co/website/yinghe/',
+            //         },
+            //     ],
+            // },
         ],
 
         sidebar: {
