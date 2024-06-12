@@ -43,8 +43,8 @@ jobs:
               if: contains(github.event.head_commit.message, 'publish:all')
               run: |
                   ossutil rm oss://90s/article/ -rf
-                  ossutil rm -rf oss://90s/work/
-                  ossutil rm -rf oss://90s/assets/
+                  ossutil rm oss://90s/work/ -rf
+                  ossutil rm oss://90s/assets/ -rf
                   ossutil cp -rf ./docs/.vitepress/dist oss://90s/
 
             - name: 项目部署 - 更新文档(排除了图片和视频等资源)
