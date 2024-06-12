@@ -80,7 +80,7 @@
 
 ## 重构方案
 
-用 [vitepress](https://vitepress.dev/) 替代 Gitbook，它是一个极简且现代的文档构建框架，同样具备完善的插件体系，而且开箱即用的功能已经可以覆盖我们先有需求。
+用 [vitepress](https://vitepress.dev/) 替代 Gitbook，它是一个极简且现代的文档构建框架，同样具备完善的插件体系，而且开箱即用的功能已经基本覆盖我们现有需求。
 
 我们来剖析一下现有的文档具备的功能模块：
 
@@ -118,7 +118,7 @@ export default function (version: string) {
 
 [vitepress](https://vitepress.dev/) 的默认主题提供了非常多且实用的插槽，我们可以轻松的拓展页面结构。
 
-得益于 vitepress 的 [运行时 API](https://vitepress.dev/zh/reference/runtime-api#usedata)，我们在拓展问题反馈这个按钮的时候还可以直接带上当前文件的地址，方便快速定位到问题所在的文件。
+得益于 vitepress 的 [运行时 API](https://vitepress.dev/zh/reference/runtime-api#usedata)，我们在拓展`问题反馈`这个按钮的时候还可以直接带上当前文件的地址，方便快速定位到问题所在的文件。
 <video controls src="./assets/fadeback.mov" />
 
 ### 多版本管理
@@ -198,6 +198,8 @@ export default function (version: string) {
 ```
 
 由于每个版本的菜单配置有 500 多行数据，而且我们需要迁移将近 20 多个版本，所以人工手动迁移数据是不现实的，所以需要写个 node 脚本来转换菜单数据。
+
+::: details 展开查看 node 脚本
 
 ```js
 import { readFile, writeFile, existsSync } from 'node:fs';
@@ -338,6 +340,8 @@ async function main() {
 main();
 ```
 
+:::
+
 在迁移的时候只需要执行：
 
 ```bash
@@ -372,7 +376,7 @@ node ./scripts/create-sidebar.js versions/3.7/en/SUMMARY.md
 -   美观度也提升不少
 -   得益于 vitepress 默认主题的多端适配，我们的移动端体验也有了巨大的提升
 
-## 发布
+## 部署
 
 我们先来看下一般`多版本多语言`的文档系统会以什么形式发布。
 
@@ -383,7 +387,7 @@ node ./scripts/create-sidebar.js versions/3.7/en/SUMMARY.md
 
 比如 nodeJs 的文档，感觉这个是最不推荐的部署方式，首先成本较大，需要申请所有国家的域名。而且服务器的运维成本也会增加。
 
-当然 nodeJs 的多语言是这样是因为官方其实只提供了英文文档，中文文档是国人自行翻译的。其实并不是一个主体。
+当然 nodeJs 的多语言是因为官方只提供了英文文档，中文文档是国人自行翻译的。并不是同一个主体。
 
 ![](./assets/url-nodejs.png)
 ![](./assets/url-nodejs-cn.png)
@@ -406,3 +410,57 @@ node ./scripts/create-sidebar.js versions/3.7/en/SUMMARY.md
 
 ![](./assets/url-unity.png)
 ![](./assets/url-cocos.png)
+
+这样的好处是只要解析一个域名就可以，把每个版本部署在不同的路径下，只要 nginx 那边做好配置，配合阿里云之类的云存储，就可以做到自动化部署（发布一个新版本，只是额外创建一个文件夹的事情）
+
+部署到子路径有个细节需要注意就是，如果使用 vitepress 构建，需要配置好 [base](https://vitepress.dev/guide/asset-handling#base-url)
+
+比如 cocos creator 的用户手册的部署域名是：
+
+**https://docs.cocos.com/creator/3.8/manual/**
+
+我们需要声明好如下配置：
+
+```js
+export default defineConfig({
+    ...shared,
+    base: `/creator/${version}/manual/`,
+});
+```
+
+因为 spa 的网页是由客户端接管路由，所以需要声明好 base，客户端才能正确解析路由地址。
+
+由于 vitepress 天然支持[多语言](https://vitepress.dev/zh/guide/i18n)的配置，所以我们只需要按版本去发布，多语言只是在发布地址上追加语言路径即可。
+
+比如我们发布了 3.8 版本路径是： https://docs.cocos.com/creator/3.8/manual/ 。
+
+那么对应的多语言路径就是：
+
+-   https://docs.cocos.com/creator/3.8/manual/zh
+-   https://docs.cocos.com/creator/3.8/manual/en
+-   https://docs.cocos.com/creator/3.8/manual/ja
+
+## 发布
+
+我们采用了同一个分支管理所有版本还带来了一个好处，可以在同一个分支指定需要构建发布的版本，比如我们发现文档的 3.6 有个文字写错了，那么我们在提交 PR 进行修复的时候可以在 commit 带上这样的信息：
+
+`feat(publish:3.6): some other message`
+
+在 github 的 workflow 中可以摘取提交信息中的版本，然后针对当前版本做构建和发布。
+
+如果我们统一升级了 vitepress 或者其他公共组件，需要对所有版本进行重新构建和发布，那么只需要这样提交 commit:
+
+`feat(publish:all): some other message`
+
+github workflow 在提取到 `all` 这个关键词，就会全量构建所有版本。
+
+整个文档的构建和发布的大体流程如下：
+
+![](./assets/workflow.png)
+
+## 总结
+
+多语言多版本的文档系统，重要的是多版本在同一个分支进行维护，这样才能共享基础代码，不同的版本只用文件夹进行隔离。
+哪怕后期我们发现了比 vitepress 更好的文档系统，迁移也是非常快速的。
+
+我们的核心资产是那些 markdown 文件和整个自动化发布流程的设计。vitepress 只是更完美的呈现了文档，但是它在这样的设计体系下也是可以比较容易被替换的。
