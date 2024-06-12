@@ -12,6 +12,7 @@ export default defineConfig({
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
+        externalLinkIcon: true,
 
         nav: [
             {

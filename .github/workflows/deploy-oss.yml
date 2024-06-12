@@ -11,7 +11,7 @@ on:
 
 jobs:
     build:
-        if: contains(github.event.head_commit.message, 'docs')
+        if: contains(github.event.head_commit.message, 'publish')
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -35,7 +35,18 @@ jobs:
                   access-key-id: ${{ secrets.AccessKeyId }}
                   access-key-secret: ${{ secrets.AccessKeySecret }}
 
-            - name: 项目部署 - docs
-              # https://help.aliyun.com/zh/oss/developer-reference/rm?spm=a2c4g.11186623.0.0.39f646afKK0HiH
-              # 需要考虑先 rm 再 cp 否则文件会一直累加 （我们不需要版本控制，直接覆盖式发布即可）
-              run: ossutil cp -rf ./docs/.vitepress/dist oss://90s/
+            # https://help.aliyun.com/zh/oss/developer-reference/
+            # 对于文档系统我们经常修改的是文本内容，如果每次发布都全量推送所有资源（图片视频等）
+            # 会降低上传效率，所以如果要更新资源需要明确的声明 'publish:all'
+            # 既然是全量发布，那么可以对之前的文件夹进行一次删除，避免历史文件的冗余
+            - name: 项目部署 - 更新文档和资源
+              if: contains(github.event.head_commit.message, 'publish:all')
+              run: |
+                  ossutil rm -rf ./docs/.vitepress/dist oss://90s/article/
+                  ossutil rm -rf ./docs/.vitepress/dist oss://90s/work/
+                  ossutil rm -rf ./docs/.vitepress/dist oss://90s/assets/
+                  ossutil cp -rf ./docs/.vitepress/dist oss://90s/
+
+            - name: 项目部署 - 更新文档(排除了图片和视频等资源)
+              if: contains(github.event.head_commit.message, 'publish:docs')
+              run: ossutil cp -rf ./docs/.vitepress/dist oss://90s/ --exclude *.jpeg --exclude *.mov --exclude *.png

@@ -74,6 +74,7 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
                 { text: 'GitHub名称映射', link: '/work/cocos/github-ids/index.md' },
                 { text: 'Hello build', link: '/work/cocos/hello-build.md' },
                 { text: '短链接', link: '/work/cocos/short-url/index.md' },
+                { text: '多版本多语言文档', link: '/work/cocos/多版本多语言文档/index.md' },
             ],
         },
     ];
