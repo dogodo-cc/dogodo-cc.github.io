@@ -9,9 +9,9 @@
         </div>
         <div class="process">
             <ProcessItem step-title="导入" :process="process.pickXlsx.process" :showProcessBar="false" />
-            <ProcessItem step-title="读取" :process="process.readXlsx.process" />
-            <ProcessItem step-title="检测" :process="process.checkTelNumber.process" />
-            <ProcessItem step-title="生成" :process="process.createXlsx.process" />
+            <ProcessItem step-title="读取" :process="process.readXlsx.process" :msg="process.readXlsx.resultMsg" />
+            <ProcessItem step-title="检测" :process="process.checkTelNumber.process" :msg="process.checkTelNumber.resultMsg" />
+            <ProcessItem step-title="生成" :process="process.createXlsx.process" :msg="process.createXlsx.resultMsg" />
         </div>
         <div class="download-section" v-if="tasks.length">
             <fieldset>
@@ -86,6 +86,9 @@ class WorkerManger {
                     break;
                 case eventMap['number-check-ing']:
                     process.value.checkTelNumber.process = message.data;
+                    break;
+                case eventMap['number-check-failed']:
+                    process.value.checkTelNumber.resultMsg = '接口请求出错！';
                     break;
                 case eventMap['create-new-xlsx-start']:
                     process.value.createXlsx.process = 0.2;

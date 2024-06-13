@@ -2,6 +2,7 @@
     <div class="process-item">
         <div v-if="props.showProcessBar" class="process-bar"></div>
         <div class="process-title" :class="{ done: done }">{{ stepTitle }}</div>
+        <span v-if="props.msg">{{ msg }}</span>
     </div>
 </template>
 
@@ -21,6 +22,10 @@ const props = defineProps({
         type: String,
         default: 'step',
     },
+    msg: {
+        type: String,
+        default: '',
+    },
 });
 
 const width = computed(() => {
@@ -34,8 +39,18 @@ const done = computed(() => {
 
 <style>
 .process-item {
+    position: relative;
     display: flex;
     align-items: center;
+    & span {
+        position: absolute;
+        text-align: center;
+        /* 和 bar 一样宽 */
+        width: 100px;
+        left: 4px;
+        top: -2px;
+        font-size: 12px;
+    }
 }
 
 .process-bar {

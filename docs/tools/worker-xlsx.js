@@ -72,11 +72,21 @@ async function readXlsxFile(data) {
 
                 self.postMessage({ type: eventMap['number-check-ing'], data: (lengthCache - sheetData.length) / lengthCache });
             })
-            .catch((e) => console.log(e));
+            .catch((e) => {
+                self.postMessage({ type: eventMap['number-check-failed'] });
+                console.log(e);
+            });
     }
     console.timeEnd('===> check');
 
     console.time('===> newxlxs');
+
+    const hasData = Object.values(newSheets).some((v) => v.length > 1);
+    if (!hasData) {
+        console.log('没有新的数据');
+        return;
+    }
+
     // 创建一个新的表格，并将所有 sheet 添加到该表格
     self.postMessage({ type: eventMap['create-new-xlsx-start'] });
     const newWorkbook = XLSX.utils.book_new();
