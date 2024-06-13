@@ -30,7 +30,7 @@ async function readXlsxFile(data) {
     console.time('===> readxlsx');
     var workbook = XLSX.read(data, { type: 'buffer' });
 
-    var sheetName = workbook.SheetNames[0]; // 获取第几个 sheet
+    var sheetName = workbook.SheetNames[1]; // 获取第几个 sheet
     var sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 }); // 转为 json 二维数组
 
     self.postMessage({ type: eventMap['read-xlsx-success'] });
