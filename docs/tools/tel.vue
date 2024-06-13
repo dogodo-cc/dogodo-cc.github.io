@@ -285,6 +285,10 @@ function mockImportProcess() {
 @media (max-width: 750px) {
     .tel-check {
         width: 100%;
+        & .download-section {
+            margin: 50px auto 30px;
+            width: 90%;
+        }
     }
 }
 </style>
