@@ -64,7 +64,7 @@ async function readXlsxFile(data) {
 
         const mobiles = list.map((row) => row[telIndex]).join(',');
 
-        await fetchPost('http://localhost:3000/tel-check', { mobiles: mobiles, type: 0 })
+        await fetchPost('http://localhost:3003/tel-check', { mobiles: mobiles, type: 0 })
             .then((res) => {
                 res.data.forEach((result, index) => {
                     newSheets[result.status].push([...list[index], result.area, result.numberType, codeMap[result.status]]);
