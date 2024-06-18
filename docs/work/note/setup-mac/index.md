@@ -180,7 +180,7 @@ chmod +x install.sh
 
 vim ./install.sh
 
-```sh
+```sh{3,4}
 # Default settings
 ZSH=${ZSH:-~/.oh-my-zsh}
 REPO=${REPO:-ohmyzsh/ohmyzsh}
@@ -188,9 +188,9 @@ REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
 ```
 
-改为 (注意第 2、3 行配置)
+改为
 
-```sh
+```sh{3,4}
 # Default settings
 ZSH=${ZSH:-~/.oh-my-zsh}
 REPO=${REPO:-mirrors/ohmyzsh}

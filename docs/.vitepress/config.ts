@@ -27,8 +27,12 @@ export default defineConfig({
             },
             {
                 text: '工具',
-                link: '/tools/tel',
-                activeMatch: '^/tools/',
+                items: [
+                    {
+                        text: '空号检测',
+                        link: 'http://konghao.90s.co',
+                    },
+                ],
             },
             // {
             //     text: '官网案例',
@@ -70,5 +74,8 @@ export default defineConfig({
         darkModeSwitchTitle: '切换到深色模式',
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/dogodo-cc' }],
+    },
+    markdown: {
+        lineNumbers: false,
     },
 });
