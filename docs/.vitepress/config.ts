@@ -9,6 +9,7 @@ export default defineConfig({
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'keywords', content: '袁炜海,袁,炜海,yuanweihai,weihai,甜甜的泥土' }],
+        ['meta', { name: 'baidu-site-verification', content: 'codeva-v1HZxWyEMq' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
