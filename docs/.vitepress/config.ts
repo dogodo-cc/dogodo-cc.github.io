@@ -83,4 +83,7 @@ export default defineConfig({
     markdown: {
         lineNumbers: false,
     },
+    sitemap: {
+        hostname: 'https://www.90s.co',
+    },
 });
