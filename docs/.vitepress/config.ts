@@ -13,6 +13,7 @@ export default defineConfig({
         ['meta', { name: 'baidu-site-verification', content: 'codeva-v1HZxWyEMq' }],
         ['meta', { name: 'msvalidate.01', content: '2E8DB63234FF33A1C2E4A568C972941F' }],
         ['meta', { name: 'sogou_site_verification', content: 'qBSg725BMX' }],
+        ['meta', { name: '360-site-verification', content: '573feda693169838a20d65a27917bef9' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
