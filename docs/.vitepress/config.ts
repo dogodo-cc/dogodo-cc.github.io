@@ -14,6 +14,12 @@ export default defineConfig({
         ['meta', { name: 'msvalidate.01', content: '2E8DB63234FF33A1C2E4A568C972941F' }],
         ['meta', { name: 'sogou_site_verification', content: 'qBSg725BMX' }],
         ['meta', { name: '360-site-verification', content: '573feda693169838a20d65a27917bef9' }],
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:locale', content: 'zh-Hans' }],
+        ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
+        ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
+        ['meta', { property: 'og:image', content: 'https://wwww.90s.co/ywh.jpg' }],
+        ['meta', { property: 'og:url', content: 'https://wwww.90s.co/' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
