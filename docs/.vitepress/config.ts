@@ -18,8 +18,8 @@ export default defineConfig({
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
-        ['meta', { property: 'og:image', content: 'https://wwww.90s.co/ywh.jpg' }],
-        ['meta', { property: 'og:url', content: 'https://wwww.90s.co/' }],
+        ['meta', { property: 'og:image', content: 'https://www.90s.co/ywh.jpg' }],
+        ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
