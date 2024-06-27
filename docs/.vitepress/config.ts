@@ -21,6 +21,7 @@ export default defineConfig({
         ['meta', { property: 'og:image', content: 'https://www.90s.co/ywh.jpg' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
