@@ -18,7 +18,7 @@ export default defineConfig({
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
-        ['meta', { property: 'og:image', content: 'https://www.90s.co/ywh.jpg' }],
+        ['meta', { property: 'og:image', content: 'https://www.90s.co/maskable-icon-512x512.png' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
         ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
