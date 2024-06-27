@@ -23,8 +23,8 @@ export default defineConfig({
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
 
         // 尝试让浏览器不要使用缓存
-        ['meta', { 'http-equiv': 'Pragma', content: 'no-cache' }],
-        ['meta', { 'http-equiv': 'Expires', content: '0' }],
+        // ['meta', { 'http-equiv': 'Pragma', content: 'no-cache' }],
+        // ['meta', { 'http-equiv': 'Expires', content: '0' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
