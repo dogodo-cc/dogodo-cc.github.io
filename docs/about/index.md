@@ -8,7 +8,7 @@ sidebar: false
 
 <div class="luxun">
     <img src="./鲁迅.jpeg" />
-    <p><i>炜海是个好同志</i></p>   
+    <p><i>炜海是个好同志.</i></p>   
 </div>
 
 <style>
