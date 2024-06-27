@@ -21,10 +21,6 @@ export default defineConfig({
         ['meta', { property: 'og:image', content: 'https://www.90s.co/ywh.jpg' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-
-        // 尝试让浏览器不要使用缓存
-        // ['meta', { 'http-equiv': 'Pragma', content: 'no-cache' }],
-        // ['meta', { 'http-equiv': 'Expires', content: '0' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
