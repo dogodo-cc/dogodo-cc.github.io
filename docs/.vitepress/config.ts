@@ -21,6 +21,10 @@ export default defineConfig({
         ['meta', { property: 'og:image', content: 'https://www.90s.co/ywh.jpg' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+
+        // 尝试让浏览器不要使用缓存
+        ['meta', { 'http-equiv': 'Pragma', content: 'no-cache' }],
+        ['meta', { 'http-equiv': 'Expires', content: '0' }],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
@@ -46,23 +50,23 @@ export default defineConfig({
                     },
                 ],
             },
-            {
-                text: '官网案例',
-                items: [
-                    {
-                        text: '建发时尚周',
-                        link: 'https://90s.co/website/ifw/',
-                    },
-                    {
-                        text: '晋江青商会',
-                        link: 'https://90s.co/website/young/',
-                    },
-                    {
-                        text: '英合律师所',
-                        link: 'https://90s.co/website/yinghe/',
-                    },
-                ],
-            },
+            // {
+            //     text: '官网案例',
+            //     items: [
+            //         {
+            //             text: '建发时尚周',
+            //             link: 'https://90s.co/website/ifw/',
+            //         },
+            //         {
+            //             text: '晋江青商会',
+            //             link: 'https://90s.co/website/young/',
+            //         },
+            //         {
+            //             text: '英合律师所',
+            //             link: 'https://90s.co/website/yinghe/',
+            //         },
+            //     ],
+            // },
         ],
 
         sidebar: {
