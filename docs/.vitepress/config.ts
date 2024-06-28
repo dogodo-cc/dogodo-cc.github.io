@@ -30,7 +30,7 @@ export default defineConfig({
             {},
             `
             const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if(/iPhone|iPod|iPad|android/i.test(userAgent))){
+            if(/iPhone|iPod|iPad|android/i.test(userAgent)){
                 localStorage.setItem("vitepress-theme-appearance", "dark")
             }
             `,
