@@ -1,14 +1,14 @@
-# Git 教程
+# Git 笔记
 
-## Git 文档
+## 文档
 
 [官方文档](https://git-scm.com/docs)
 
-## git alias
+## 终端配置
 
 使用 zsh 的 plugin, [zsh-plugins-git](https://gitee.com/mirrors/oh-my-zsh/tree/master/plugins/git)
 
-## git branch
+## 分支管理
 
 -   git branch 查看本地分支
 -   git branch -r 查看远程分支
@@ -16,19 +16,20 @@
 -   git branch -d xxx 删除本地分支
 -   git push origin --delete xxxx 删除远程分支
 
--   git branch -r | grep yuanshuai 查看远程的包含 yuanshuai 的分支
--   git branch | grep yuanshuai | xargs git branch -D 批量删除本地分支
+-   git branch -r | grep alan* 查看远程的包含 alan* 的分支
+-   git branch | grep alan\_ | xargs git branch -D 批量删除本地分支
 -   git branch -a | grep -v -E 'master|develop' | xargs git branch -D // 只保留 master 等分支
--   git branch -r | grep 'yuanshuai' | xargs -I {} basename {} | xargs -I {} git push origin :{} 批量删除远程分支
+-   git branch -r | grep 'alan\_' | xargs -I {} basename {} | xargs -I {} git push origin :{} 批量删除远程分支
 -   git remote prune origin // 刷新一下分支列表
 
-## git checkout
+## 分支切换
 
 -   git checkout xxx 切换到某个分支
 -   git checkout . 放弃本次修改
 -   git checkout -b xxx origin/xxx 创建一个和远程分支关联的分支
 -   git checkout -b xxx 创建一个新分支
 -   git push origin xxx 将本地分支提交到远程
+-   git checkout - 回到上一个分支
 
 ## git merge
 
