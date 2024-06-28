@@ -22,6 +22,15 @@ export default defineConfig({
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
         ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
+        [
+            'script',
+            {},
+            `
+            localStorage.setItem("vitepress-theme-appearance", "dark")
+            `,
+            // 默认用暗色主题，因为 manifest 配置那边主题是暗色的，体验效果更好
+            // TODO: 需要研究下 少数派的 动态切换主题的方案
+        ],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
