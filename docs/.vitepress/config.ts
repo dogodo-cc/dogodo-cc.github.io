@@ -35,6 +35,20 @@ export default defineConfig({
             }
             `,
         ],
+
+        [
+            'script',
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b1cb86bb45fa83e84117593f53c47b78";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+            `,
+        ],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
