@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { onKeyStroke } from '@vueuse/core';
+import { onKeyStroke, useScroll } from '@vueuse/core';
 import { onContentUpdated } from 'vitepress';
-import { nextTick, ref, watch } from 'vue';
+import { nextTick, ref, watch, computed } from 'vue';
 import { useData } from '../composables/data';
 import { resolveTitle, type MenuItem } from '../composables/outline';
 import VPDocOutlineItem from './VPDocOutlineItem.vue';
@@ -56,11 +56,19 @@ function onItemClick(e: Event) {
     }
 }
 
+// 针对甜甜的泥土的博客进行改造
 function scrollToTop() {
     open.value = false;
     const win = /iPhone|iPod|iPad|android/i.test(navigator.userAgent) ? document.body : window;
     win.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
+
+const { y } = useScroll(document.body);
+const progress = computed(() => {
+    const distance = document.getElementById('app')!.offsetHeight - window.innerHeight;
+    return (y.value / distance) * 100 + '%';
+});
+// 改造结束
 </script>
 
 <template>
@@ -84,6 +92,7 @@ function scrollToTop() {
                 </div>
             </div>
         </Transition>
+        <div class="progress-bar"></div>
     </div>
 </template>
 
@@ -193,5 +202,29 @@ function scrollToTop() {
 .flyout-leave-to {
     opacity: 0;
     transform: translateY(-16px);
+}
+
+.progress-bar {
+    display: none;
+}
+@media (max-width: 750px) {
+    .progress-bar {
+        display: block;
+        position: absolute;
+        right: 0%;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: var(--vp-c-text-2);
+            width: v-bind('progress');
+        }
+    }
 }
 </style>
