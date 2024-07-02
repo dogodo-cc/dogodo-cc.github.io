@@ -1,7 +1,6 @@
 {
     "type": "module",
     "scripts": {
-        "postinstall": "node ./scripts/copy-vp-components.js",
         "docs:dev": "vitepress dev docs --host --port=3001",
         "docs:build": "vitepress build docs",
         "docs:preview": "vitepress preview docs"

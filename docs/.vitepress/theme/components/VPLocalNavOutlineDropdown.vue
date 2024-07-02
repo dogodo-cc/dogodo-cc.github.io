@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { onKeyStroke, useScroll } from '@vueuse/core';
+import { onKeyStroke } from '@vueuse/core';
 import { onContentUpdated } from 'vitepress';
-import { nextTick, ref, watch, computed } from 'vue';
-import { useData } from '../composables/data';
-import { resolveTitle, type MenuItem } from '../composables/outline';
-import VPDocOutlineItem from './VPDocOutlineItem.vue';
+import { ref, watch } from 'vue';
+import { useData } from 'vitepress';
+import ProgressBar from './ProgressBar.vue';
 
 const props = defineProps<{
-    headers: MenuItem[];
+    headers: [];
     navHeight: number;
 }>();
 
@@ -39,60 +38,21 @@ onContentUpdated(() => {
     open.value = false;
 });
 
-function toggle() {
-    open.value = !open.value;
-    vh.value = window.innerHeight + Math.min(window.scrollY - props.navHeight, 0);
-}
-
-function onItemClick(e: Event) {
-    if ((e.target as HTMLElement).classList.contains('outline-link')) {
-        // disable animation on hash navigation when page jumps
-        if (items.value) {
-            items.value.style.transition = 'none';
-        }
-        nextTick(() => {
-            open.value = false;
-        });
-    }
-}
-
-// 针对甜甜的泥土的博客进行改造
 function scrollToTop() {
     open.value = false;
-    const win = /iPhone|iPod|iPad|android/i.test(navigator.userAgent) ? document.body : window;
+    // 故意将移动端的滚动对象由root改为 body，因为root的滚动条样式不可控
+    const isRootOverflowHidden = getComputedStyle(document.documentElement).getPropertyValue('overflow-y') === 'hidden';
+    const win = isRootOverflowHidden ? document.body : window;
     win.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
-
-const { y } = useScroll(document.body);
-const progress = computed(() => {
-    const distance = document.getElementById('app')!.offsetHeight - window.innerHeight;
-    return (y.value / distance) * 100 + '%';
-});
-// 改造结束
 </script>
 
 <template>
     <div class="VPLocalNavOutlineDropdown" :style="{ '--vp-vh': vh + 'px' }" ref="main">
-        <button @click="toggle" :class="{ open }" v-if="headers.length > 0">
-            <span class="menu-text">{{ resolveTitle(theme) }}</span>
-            <span class="vpi-chevron-right icon" />
-        </button>
-        <button @click="scrollToTop" v-else>
+        <button @click="scrollToTop">
             {{ theme.returnToTopLabel || 'Return to top' }}
         </button>
-        <Transition name="flyout">
-            <div v-if="open" ref="items" class="items" @click="onItemClick">
-                <div class="header">
-                    <a class="top-link" href="#" @click="scrollToTop">
-                        {{ theme.returnToTopLabel || 'Return to top' }}
-                    </a>
-                </div>
-                <div class="outline">
-                    <VPDocOutlineItem :headers="headers" />
-                </div>
-            </div>
-        </Transition>
-        <div class="progress-bar"></div>
+        <ProgressBar />
     </div>
 </template>
 
@@ -202,29 +162,5 @@ const progress = computed(() => {
 .flyout-leave-to {
     opacity: 0;
     transform: translateY(-16px);
-}
-
-.progress-bar {
-    display: none;
-}
-@media (max-width: 750px) {
-    .progress-bar {
-        display: block;
-        position: absolute;
-        right: 0%;
-        bottom: 0;
-        left: 0;
-        height: 1px;
-        &::after {
-            display: block;
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            background-color: var(--vp-c-text-2);
-            width: v-bind('progress');
-        }
-    }
 }
 </style>

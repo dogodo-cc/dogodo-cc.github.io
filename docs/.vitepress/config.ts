@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
 
 export default defineConfig({
@@ -10,16 +11,23 @@ export default defineConfig({
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'keywords', content: '袁炜海,袁,炜海,yuanweihai,weihai,甜甜的泥土' }],
         ['meta', { 'http-equiv': 'Content-Type', content: 'text/html;charset=gb2312' }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no' }],
+
+        // 搜索引擎站长 SEO
         ['meta', { name: 'baidu-site-verification', content: 'codeva-v1HZxWyEMq' }],
         ['meta', { name: 'msvalidate.01', content: '2E8DB63234FF33A1C2E4A568C972941F' }],
         ['meta', { name: 'sogou_site_verification', content: 'qBSg725BMX' }],
         ['meta', { name: '360-site-verification', content: '573feda693169838a20d65a27917bef9' }],
+
+        // 分享的配置
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
         ['meta', { property: 'og:image', content: 'https://www.90s.co/maskable-icon-512x512.png' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
+
+        // PWA 配置
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
         ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
 
@@ -29,13 +37,13 @@ export default defineConfig({
             'script',
             {},
             `
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if(/iPhone|iPod|iPad|android/i.test(userAgent)){
+            if(/iPhone|iPod|iPad|android/i.test(navigator.userAgent)){
                 localStorage.setItem("vitepress-theme-appearance", "dark")
             }
             `,
         ],
 
+        // 百度统计
         [
             'script',
             {},
@@ -120,5 +128,16 @@ export default defineConfig({
     },
     sitemap: {
         hostname: 'https://www.90s.co',
+    },
+    vite: {
+        resolve: {
+            // https://vitepress.dev/zh/guide/extending-default-theme#overriding-internal-components
+            alias: [
+                {
+                    find: /^.*\/VPLocalNavOutlineDropdown\.vue$/,
+                    replacement: fileURLToPath(new URL('./theme/components/VPLocalNavOutlineDropdown.vue', import.meta.url)),
+                },
+            ],
+        },
     },
 });
