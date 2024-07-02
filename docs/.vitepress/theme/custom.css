@@ -3,3 +3,29 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
 }
+
+/* 
+在移动端隐藏原生的浏览器滚动条 :root 的无法通过css隐藏，所以把滚动作用到 body，再针对 body 进行隐藏滚动条
+需要配合下面这个脚本对默认主题进行修改
+scripts/copy-vp-components.js 
+*/
+@media (max-width: 750px) {
+    :root {
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        height: 100%;
+        overflow-y: auto;
+
+        /* 标准的隐藏滚动条 */
+        scrollbar-width: none;
+        scrollbar-color: transparent;
+
+        /* webkit 内核隐藏滚动条 */
+        &::-webkit-scrollbar {
+            appearance: none;
+            display: none;
+        }
+    }
+}
