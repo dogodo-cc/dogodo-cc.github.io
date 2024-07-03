@@ -28,9 +28,10 @@ export default defineConfig({
         ['meta', { property: 'og:image', content: 'https://www.90s.co/maskable-icon-512x512.png' }],
         ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
 
-        // PWA 配置
+        // #region snippet
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
         ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
+        // #endregion snippet
 
         // 在手机上 默认用暗色主题，因为 manifest 配置那边主题是暗色的，体验效果更好
         // TODO: 需要研究下 少数派的 动态切换主题的方案

@@ -1,35 +1,18 @@
+@import url(./custom-root.css);
+
 /* 上下页 按左右对半排列 */
 .prev-next {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
 }
 
+/* 两边空隙 10px 差不多了 */
 .VPContent .VPDoc {
     padding: 32px 10px 96px;
 }
 
-/* 
-在移动端隐藏原生的浏览器滚动条
-:root 的滚动条无法通过 css 隐藏
-所以把滚动应用到 body，再针对 body 进行滚动条隐藏
-*/
-@media (max-width: 750px) {
-    :root {
-        height: 100%;
-        overflow: hidden;
-    }
-    body {
-        height: 100%;
-        overflow-y: auto;
-
-        /* 标准的隐藏滚动条 */
-        scrollbar-width: none;
-        scrollbar-color: transparent;
-
-        /* webkit 内核隐藏滚动条 */
-        &::-webkit-scrollbar {
-            appearance: none;
-            display: none;
-        }
-    }
+/* 代码块，原来是是 margin: 16px -24px, 会造成移动端的横向滚动 */
+.vp-doc div[class*='language-'],
+.vp-block {
+    margin: 16px 0;
 }

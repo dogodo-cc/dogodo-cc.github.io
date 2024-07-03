@@ -10,7 +10,15 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
             ],
         },
-        { text: '2014', items: [{ text: '小小出租屋', link: '/article/2014/小小出租屋.md' }] },
+        {
+            text: '2014',
+            items: [
+                {
+                    text: '小小出租屋',
+                    link: '/article/2014/小小出租屋.md',
+                },
+            ],
+        },
         {
             text: '2013',
             items: [
@@ -44,6 +52,7 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
                 { text: 'Git 命令', link: '/work/note/git/index.md' },
                 { text: '电脑设置-mac', link: '/work/note/setup-mac/index.md' },
                 { text: '电脑设置-win', link: '/work/note/setup-win/index.md' },
+                { text: '关于本站', link: '/work/note/blog/index.md' },
             ],
         },
         {

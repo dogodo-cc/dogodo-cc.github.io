@@ -37,7 +37,7 @@ onKeyStroke('Escape', () => {
 onContentUpdated(() => {
     open.value = false;
 });
-
+// #region snippet
 function scrollToTop() {
     open.value = false;
     // 故意将移动端的滚动对象由root改为 body，因为root的滚动条样式不可控
@@ -45,6 +45,7 @@ function scrollToTop() {
     const win = isRootOverflowHidden ? document.body : window;
     win.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
+// #endregion snippet
 </script>
 
 <template>
