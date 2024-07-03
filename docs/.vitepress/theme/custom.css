@@ -4,6 +4,10 @@
     grid-column-gap: 16px;
 }
 
+.VPContent .VPDoc {
+    padding: 32px 10px 96px;
+}
+
 /* 
 在移动端隐藏原生的浏览器滚动条
 :root 的滚动条无法通过 css 隐藏

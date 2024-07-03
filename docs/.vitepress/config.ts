@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
+import type { DefaultTheme } from 'vitepress';
 
 export default defineConfig({
     title: '甜甜的泥土',
@@ -67,6 +68,7 @@ export default defineConfig({
                 text: '文字',
                 link: '/article/',
                 activeMatch: '^/article/',
+                // items: getArticles() as DefaultTheme.NavItemChildren[],
             },
             {
                 text: '工作',
