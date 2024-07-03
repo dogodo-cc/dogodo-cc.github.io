@@ -99,7 +99,7 @@ pageClass: my-desktop
 
 排列方式是我折腾多次得到的最优解，脖子几乎没有酸痛过了
 
-![](./assets/2021.heic)
+![](./assets/2021.jpeg)
 
 未完待续...
 
