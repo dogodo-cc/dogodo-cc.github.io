@@ -2,8 +2,11 @@
 
 袁炜海博客站
 
-mac 的命令行工具修改图片尺寸
+## mac sips
+
 sips -z 180 180 ./apple-touch-icon.png --out ./apple-touch-icon-180x180.png
+
+sips -s format jpeg 2021.heic --out 2021.jpeg
 
 ## 制作 pwa 的图标
 
