@@ -141,5 +141,6 @@ export default defineConfig({
                 },
             ],
         },
+        assetsInclude: '**/*.heic',
     },
 });
