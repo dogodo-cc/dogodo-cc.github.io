@@ -12,6 +12,7 @@ pageClass: about-this-site
 
 ## PWA 体验
 
+如下简单配置之后，本网站就能够以 APP 的形式添加到桌面。
 ::: details 配置文件
 
 ::: code-group
@@ -19,7 +20,7 @@ pageClass: about-this-site
 <<< @/.vitepress/config.ts#snippet
 :::
 
-通过简单配置之后，本网站就能够以 APP 的形式添加到桌面。
+如果你想体验 PWA ，那么简单操作几步即可：
 
 1、 打开手机浏览器（苹果: safair | 安卓: chrome）在网址输入框输入 `www.90s.co`
 
