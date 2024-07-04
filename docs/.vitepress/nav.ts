@@ -49,10 +49,10 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
         {
             text: '笔记',
             items: [
+                { text: '关于本站', link: '/work/note/blog/index.md' },
                 { text: 'Git 命令', link: '/work/note/git/index.md' },
                 { text: '电脑设置-mac', link: '/work/note/setup-mac/index.md' },
                 { text: '电脑设置-win', link: '/work/note/setup-win/index.md' },
-                { text: '关于本站', link: '/work/note/blog/index.md' },
             ],
         },
         {
