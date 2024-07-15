@@ -91,6 +91,10 @@ function GitBranch {git branch}
 
 ![](./windows-terminal.png)
 
+### 待研究
+
+[oh-my-posh](https://ohmyposh.dev/) 类似 mac 上的 oh-my-zsh
+
 ### 实用命令
 
 -   open . 将当前的文件地址在资源管理器中打开
