@@ -1,18 +1,14 @@
 import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
-import { defineComponent, h } from 'vue';
 import './custom.css';
+
+// https://www.antdv.com/docs/vue/introduce-cn
+import { Row, Col } from 'ant-design-vue';
 
 export default {
     extends: DefaultTheme,
     enhanceApp({ app }) {
-        app.component(
-            'indentation',
-            defineComponent({
-                setup() {
-                    return () => '\u00a0\u00a0\u00a0\u00a0';
-                },
-            })
-        );
+        app.use(Row);
+        app.use(Col);
     },
 } satisfies Theme;
