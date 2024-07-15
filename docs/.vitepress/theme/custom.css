@@ -16,3 +16,9 @@
 .vp-block {
     margin: 16px 0;
 }
+
+/* 用于在图片下方，解释说明图片内容 */
+.picture-tip {
+    text-align: center;
+    font-size: 12px;
+}
