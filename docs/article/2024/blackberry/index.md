@@ -48,7 +48,7 @@
 
 黑莓 9000 应该是 bold 系列非常经典的型号了。之前在论坛就一直听大家对它的赞叹。包括握持手感，外放音质，屏幕显示都非常棒。
 
-![](./assets/9000.jpeg)
+![](./assets/9000/9000.jpeg)
 
 这是我拥有的第一款黑莓手机，视如珍宝，真的超级喜欢这个外观和手感。拿着很踏实，当年一直比较排斥触屏操作，觉得按键的体验才是最符合人体工学的。
 
@@ -62,15 +62,70 @@
 
 它提供的刚好是我需要的，它没提供的，刚好是我不在意的。
 
--   通话
+黑莓手机优秀的通话质量放现在不算什么，但是在十几年前，属于一个比较刚需的功能。那时候和家人联系还是通过拨打电话，而且不是现在的微信语音和视频。网上看到最多的通话描述就是`通透`，不是单纯的音量大，而是浑厚有力的声音反馈。
 
--   聊天打字
+清晰透亮的屏幕显示效果，特别是在阳光下可以毫不费力的看清屏幕上的文字，搭配实体按键，用来看小说非常棒。
 
--   屏幕观感 小说阅读
+我不喜欢触摸屏看小说的体验，我们的拇指需要悬空在屏幕上方，是一种不踏实的姿势。而使用黑莓，我可以将手指搭在键盘上，下一页的时候按压即可。就这个细微的区别，让我非常喜欢在黑莓上看小说。
 
--   系统简洁
+市面上稍微讲究一点人体工学设计的电子阅读器，哪怕屏幕是触摸的，都会附加实体分页按钮。
 
--   外观设计
+![](./assets/9000/1.jpg)
+
+<PictureTip>藏地密码就是在黑莓 9000 上看完的</PictureTip>
+
+![](./assets/9000/2.jpg)
+
+黑莓的外观设计属于商务沉稳的风格，机身质感有种与生俱来的贵族气息。特别是 Bold 系列，外观设计非常戳中我的审美。
+
+所以哪怕在当下它的是一种略微过时的系统，都让我义无反顾的爱上它。
+
+系统很简洁，而且由于有实体按键，配合`热键大师`做快捷键匹配，效率非常高。其实原生的快捷键就非常方便了，比如按 D 建快速呼出记事本，按 A 打开通讯录，按 L 进行锁屏等等（已经过去十多年了，快捷键记错了勿怪）
+
+![](./assets/9000/3.jpg)
+
+我需要的软件不多，当时它有截图中的这些应用就够了，微信用于简单通信（大部分时间是在电脑上使用 QQ），Anyview 用来看电子书，UC 浏览器用来看糗事百科。
+
+我真的是太爱黑莓了，以至于当我不得不使用其他手机时，我还特意为当时的黑莓 9000 做了大量的系统截图，为了以后可以回忆起当年的模样。
+
+这些截图就是 10 多年我使用黑莓 9000 的模样：
+<a-row :gutter="[4,4]">
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/1.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/2.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/3.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/4.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/5.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/6.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/7.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/8.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/9.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/10.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/11.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/12.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/13.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/14.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/15.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/16.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/17.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/18.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/19.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/20.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/21.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/22.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/23.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/24.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/25.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/26.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/27.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/28.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/29.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/30.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/31.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/32.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/33.jpg" /></a-col>
+<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/34.jpg" /></a-col>
+
+</a-row>
 
 一些美图：
 ![](./assets/9900/9900-1.jpg)

@@ -40,6 +40,7 @@ export default defineConfig({
             {},
             `
             if(/iPhone|iPod|iPad|android/i.test(navigator.userAgent)){
+                document.body.classList.add('wap')
                 localStorage.setItem("vitepress-theme-appearance", "dark")
             }
             `,
