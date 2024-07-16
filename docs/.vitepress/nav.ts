@@ -9,6 +9,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
                 { text: '骑行知识', link: '/article/2024/bicycle/index.md' },
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
                 { text: '暑假工和兼职', link: '/article/2024/part-time-job/index.md' },
+                { text: '我的租房经历', link: '/article/2024/rental-houses/index.md' },
             ],
         },
         {

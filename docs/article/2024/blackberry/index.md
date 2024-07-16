@@ -18,7 +18,7 @@
 
 ![](./assets/友人网.png)
 
-<div class="picture-tip">先见之明的保留了一张截图</div>
+<PictureTip>先见之明的保留了一张截图</PictureTip>
 
 用段位来表示论坛的等级，需要多发帖，多回复，被点赞就可以积累经验值。那时候还想成为九段大佬呢！
 
@@ -26,7 +26,7 @@
 
 ![](./assets/友人网-暂停服务.jpg)
 
-<div class="picture-tip">当初很机智的截图</div>
+<PictureTip>当初很机智的截图</PictureTip>
 
 ## 折腾
 

@@ -1,4 +1,6 @@
 ![](./assets/h5-editor.png)
 
-![](./assets/1.jpeg)
-![](./assets/2.jpeg)
+<PicturesScrollX>
+    <img src="./assets/1.jpeg" />
+    <img src="./assets/2.jpeg" />
+</PicturesScrollX>

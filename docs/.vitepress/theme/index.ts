@@ -2,6 +2,10 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
 
+// 图片横向滚动的组件
+import PicturesScrollX from './components/pictures-scroll-x.vue';
+import PictureTip from './components/picture-tip.vue';
+
 // https://www.antdv.com/docs/vue/introduce-cn
 import { Row, Col } from 'ant-design-vue';
 
@@ -10,5 +14,7 @@ export default {
     enhanceApp({ app }) {
         app.use(Row);
         app.use(Col);
+        app.component('PicturesScrollX', PicturesScrollX);
+        app.component('PictureTip', PictureTip);
     },
 } satisfies Theme;
