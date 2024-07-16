@@ -89,43 +89,8 @@
 我真的是太爱黑莓了，以至于当我不得不使用其他手机时，我还特意为当时的黑莓 9000 做了大量的系统截图，为了以后可以回忆起当年的模样。
 
 这些截图就是 10 多年我使用黑莓 9000 的模样：
-<a-row :gutter="[4,4]">
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/1.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/2.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/3.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/4.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/5.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/6.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/7.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/8.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/9.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/10.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/11.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/12.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/13.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/14.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/15.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/16.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/17.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/18.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/19.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/20.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/21.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/22.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/23.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/24.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/25.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/26.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/27.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/28.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/29.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/30.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/31.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/32.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/33.jpg" /></a-col>
-<a-col :span="12" :md="{span: 8}"><img src="./assets/9000/screenshot/34.jpg" /></a-col>
 
-</a-row>
+<!--@include: ./assets/9000/screenshot.md-->
 
 一些美图：
 ![](./assets/9900/9900-1.jpg)
