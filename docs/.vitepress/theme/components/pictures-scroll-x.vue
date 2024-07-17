@@ -3,14 +3,27 @@
         <slot />
     </div>
 </template>
-<style>
+<script setup>
+import { computed } from 'vue';
+const props = defineProps({
+    width: {
+        type: Number,
+        default: 200,
+    },
+});
+
+const width = computed(() => {
+    return props.width + 'px';
+});
+</script>
+<style lang="css">
 .pictures-scroll-x {
     display: flex;
     width: 100%;
     overflow-x: auto;
     align-items: end;
     & img {
-        width: 200px;
+        width: v-bind(width);
     }
 }
 </style>
