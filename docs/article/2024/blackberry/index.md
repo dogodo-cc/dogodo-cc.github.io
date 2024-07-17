@@ -90,7 +90,48 @@
 
 这些截图就是 10 多年前我使用黑莓 9000 的模样：
 
-<!--@include: ./assets/9000/screenshot.md-->
+<a-row :gutter="[4,4]">
+    <a-col v-for="pic in pictures" :key="pic" :span="12" :md="{span: 8}"><img :src="pic" /></a-col>
+</a-row>
+
+<script setup>
+    import pic_1 from './assets/9000/screenshot/1.jpg';
+    import pic_2 from './assets/9000/screenshot/2.jpg';
+    import pic_3 from './assets/9000/screenshot/3.jpg';
+    import pic_4 from './assets/9000/screenshot/4.jpg';
+    import pic_5 from './assets/9000/screenshot/5.jpg';
+    import pic_6 from './assets/9000/screenshot/6.jpg';
+    import pic_7 from './assets/9000/screenshot/7.jpg';
+    import pic_8 from './assets/9000/screenshot/8.jpg';
+    import pic_9 from './assets/9000/screenshot/9.jpg';
+    import pic_10 from './assets/9000/screenshot/10.jpg';
+    import pic_11 from './assets/9000/screenshot/11.jpg';
+    import pic_12 from './assets/9000/screenshot/12.jpg';
+    import pic_13 from './assets/9000/screenshot/13.jpg';
+    import pic_14 from './assets/9000/screenshot/14.jpg';
+    import pic_15 from './assets/9000/screenshot/15.jpg';
+    import pic_16 from './assets/9000/screenshot/16.jpg';
+    import pic_17 from './assets/9000/screenshot/17.jpg';
+    import pic_18 from './assets/9000/screenshot/18.jpg';
+    import pic_19 from './assets/9000/screenshot/19.jpg';
+    import pic_20 from './assets/9000/screenshot/20.jpg';
+    import pic_21 from './assets/9000/screenshot/21.jpg';
+    import pic_22 from './assets/9000/screenshot/22.jpg';
+    import pic_23 from './assets/9000/screenshot/23.jpg';
+    import pic_24 from './assets/9000/screenshot/24.jpg';
+    import pic_25 from './assets/9000/screenshot/25.jpg';
+    import pic_26 from './assets/9000/screenshot/26.jpg';
+    import pic_27 from './assets/9000/screenshot/27.jpg';
+    import pic_28 from './assets/9000/screenshot/28.jpg';
+    import pic_29 from './assets/9000/screenshot/29.jpg';
+    import pic_30 from './assets/9000/screenshot/30.jpg';
+    import pic_31 from './assets/9000/screenshot/31.jpg';
+    import pic_32 from './assets/9000/screenshot/32.jpg';
+    import pic_33 from './assets/9000/screenshot/33.jpg';
+    import pic_34 from './assets/9000/screenshot/34.jpg';
+
+    const pictures = [pic_1,pic_2,pic_3,pic_4,pic_5,pic_6,pic_7,pic_8,pic_9,pic_10,pic_11,pic_12,pic_13,pic_14,pic_15,pic_16,pic_17,pic_18,pic_19,pic_20,pic_21,pic_22,pic_23,pic_24,pic_25,pic_26,pic_27,pic_28,pic_29,pic_30,pic_31,pic_32,pic_33,pic_34];
+</script>
 
 一些美图：
 ![](./assets/9900/9900-1.jpg)
