@@ -34,12 +34,12 @@
 
 当年收藏的壁纸：
 <a-row>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-1.jpg" /></a-col>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-2.jpg" /></a-col>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-3.jpg" /></a-col>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-4.jpg" /></a-col>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-5.jpg" /></a-col>
-<a-col :span="8"><img src="./assets/wallpaper/wallpaper-6.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-1.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-2.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-3.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-4.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-5.jpg" /></a-col>
+<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-6.jpg" /></a-col>
 </a-row>
 
 我前前后后折腾过的黑莓手机有： 7290，8310，9000，9900，Q20
@@ -91,7 +91,7 @@
 这些截图就是 10 多年前我使用黑莓 9000 的模样：
 
 <a-row :gutter="[4,4]">
-    <a-col v-for="pic in pictures" :key="pic" :span="12" :md="{span: 8}"><img :src="pic" /></a-col>
+    <a-col v-for="pic in pictures" :key="pic" :span="12" :md="{span: 8}"><img loading="lazy" :src="pic" /></a-col>
 </a-row>
 
 <script setup>
