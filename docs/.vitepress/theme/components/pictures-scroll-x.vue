@@ -23,7 +23,7 @@ const width = computed(() => {
     overflow-x: auto;
     align-items: end;
     & img {
-        width: v-bind(width);
+        width: v-bind('width');
     }
 }
 </style>
