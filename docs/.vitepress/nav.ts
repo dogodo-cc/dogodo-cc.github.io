@@ -5,11 +5,11 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
         {
             text: '2024',
             items: [
-                { text: '我和黑莓', link: '/article/2024/blackberry/index.md' },
-                { text: '骑行知识', link: '/article/2024/bicycle/index.md' },
+                { text: '骑行经验', link: '/article/2024/bicycle/index.md' },
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
-                { text: '暑假工和兼职', link: '/article/2024/part-time-job/index.md' },
-                { text: '我的租房经历', link: '/article/2024/rental-houses/index.md' },
+                { text: '回忆-我和黑莓', link: '/article/2024/blackberry/index.md' },
+                { text: '回忆-暑假工和兼职', link: '/article/2024/part-time-job/index.md' },
+                { text: '回忆-我的租房经历', link: '/article/2024/rental-houses/index.md' },
             ],
         },
         {
