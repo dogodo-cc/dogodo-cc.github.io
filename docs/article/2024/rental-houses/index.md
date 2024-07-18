@@ -36,7 +36,7 @@
 
 ![](./assets/1.jpeg)
 
-在袁思彤的厨房做饭吃。
+<PictureTip>在袁思彤的厨房做饭吃</PictureTip>
 <PicturesScrollX>
 <img src="./assets/3.jpeg" />
 <img src="./assets/4.jpeg" />
@@ -45,3 +45,56 @@
 和大家租同一栋楼，下班可以一起玩的感觉很好。后面黄恩灵和阿坤都相继去了深圳，我也由于工作换到了海沧，搬到海沧的石塘村了。
 
 ## 海沧石塘村
+
+在海沧石塘村住的房间是在走廊尽头，所以有两面采光，环境很安静。非常标准的单间，一个人住非常合适。房租只要 550 每月。
+
+这边的居住体验还是挺好的，有种孤独又惬意的感觉。因为这边只有自己一个人，回到宿舍也没人说话，就可以自在的玩电脑，写代码。
+
+![](./assets/haichan/1.jpeg)
+
+<PictureTip>算是最有学习状态的一段时间</PictureTip>
+
+石塘村非常很热闹，烟火气旺盛，哪怕是晚上 11 点走在那条路上，都很多人。吃得很多，我最喜欢吃一家铁板豆腐和肥肠面。
+
+2017 年苏小姐从福州搬来厦门，我们正式在这个出租房同居了。她的东西超级多，瞬间塞满了小小的房间。
+
+![](./assets/haichan/2.jpeg)
+<PictureTip>刚来第一天</PictureTip>
+
+为了迎接她的到来我提前买了几个箱子和衣架用来装衣服。
+
+<PicturesScrollX>
+<img src="./assets/haichan/4.jpeg" />
+<img src="./assets/haichan/3.jpeg" />
+</PicturesScrollX>
+
+经过我们的收拾，小房间虽然拥挤，但是还算整齐。
+
+![](./assets/haichan/5.jpeg)
+<PictureTip>弱小的桌子现在承受 2 个人的东西</PictureTip>
+
+苏小姐来之后最大的变化就是，有人做饭了，而且她的手艺还不错。当然，我洗碗的功底也不差。只是我就很少去吃喜爱的肥肠面了。
+
+<PicturesScrollX>
+<img src="./assets/haichan/food/1.jpeg" />
+<img src="./assets/haichan/food/2.jpeg" />
+<img src="./assets/haichan/food/3.jpeg" />
+<img src="./assets/haichan/food/4.jpeg" />
+<img src="./assets/haichan/food/5.jpeg" />
+<img src="./assets/haichan/food/6.jpeg" />
+<img src="./assets/haichan/food/7.jpeg" />
+<img src="./assets/haichan/food/8.jpeg" />
+<img src="./assets/haichan/food/9.jpeg" />
+</PicturesScrollX>
+<PictureTip>可以横向滑动查看图片</PictureTip>
+
+这段时间应该是最快乐的，没有房贷，没有任何负担。我们还经常去参加徒步客，爬爬山。周末就在厦门公园走走。
+
+如果不是工作变动，我们在海沧这边应该会住很久，哪怕当时在双子塔上班要经历海沧大桥的绝命连环堵车。
+
+可是，双子塔的公司解散了，我们新工作换到了湖里区，所以我们就从海沧搬到湖里了。
+
+<video src="https://www.90s.co/videos/海沧石塘出租屋.mov" controls />
+<PictureTip>一段当时小房间的视频</PictureTip>
+
+## 湖里高林社区
