@@ -17,10 +17,14 @@
     margin: 16px 0;
 }
 
-/* 大图左右居中比较好看 */
-.vp-doc p img {
+/* 大图左右居中比较好看  但是 不要影响到横向滚动图集里的样式*/
+.vp-doc img:not(.pictures-scroll-x img) {
     margin-left: auto;
     margin-right: auto;
+    /* 有的图太大了不好看，给个最大宽度 */
+    &.size-m {
+        max-width: 500px;
+    }
 }
 
 .text-center {
