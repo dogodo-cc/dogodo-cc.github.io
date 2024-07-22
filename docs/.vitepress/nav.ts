@@ -69,7 +69,7 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
             text: '稿定科技',
             link: '/work/gaoding/index.md',
             items: [
-                { text: '埋点', link: '/work/gaoding/埋点.md' },
+                { text: '埋点', link: '/work/gaoding/maidian/index.md' },
                 { text: 'Eslint', link: '/work/gaoding/eslint.md' },
                 { text: '弃用css预处理语言', link: '/work/gaoding/弃用css预处理语言.md' },
                 { text: 'headless', link: '/work/gaoding/headless/index.md' },
