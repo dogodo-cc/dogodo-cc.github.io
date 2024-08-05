@@ -58,7 +58,7 @@
 
 2017 年苏小姐从福州搬来厦门，我们正式在这个出租房同居了。她的东西超级多，瞬间塞满了小小的房间。
 
-<img class="size-m" src="./assets/haichan/2.jpeg" />
+<img class="max-w-500 center" src="./assets/haichan/2.jpeg" />
 <PictureTip>刚来第一天</PictureTip>
 
 为了迎接她的到来我提前买了几个箱子和衣架用来装衣服。
@@ -129,13 +129,13 @@
 
 要说缺点就是我们这个房间需要和另外一个房间的人共用厕所。这种公共使用的体验就不太好，特别是另外一个房间换成了一个男租客之后。
 
-<img class="size-m" src="./assets/shimao/3.png"/>
+<img class="max-w-500 center" src="./assets/shimao/3.png"/>
 
 <PictureTip>这是我用 Word 做的灵魂海报</PictureTip>
 
 后来隔壁换了一批租客，那个两房一厅挤下了可能有 5-6 个人。噪音就多了，也是大晚上的聚餐，吆五喝六。最里面的那个房间之前一直有个男生很安静，后面搬走了，换了个女租客，可能是夜场工作，经常半夜出行，带着一些精神小伙，吵吵闹闹的。
 
-<img class="size-m" src="./assets/shimao/4.png" />
+<img class="max-w-500 center" src="./assets/shimao/4.png" />
 
 这一切的变化，又提醒着我，该换地方住了。群租的体验也不可控，你的邻居决定了你的居住体验。
 
