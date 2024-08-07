@@ -26,7 +26,10 @@
     margin-right: auto;
 }
 
-@media (min-width: 450px) {
+/* 
+ * ipad mini 是 768 * 1024
+ */
+@media (min-width: 750px) {
     .max-w-500 {
         max-width: 500px;
     }
