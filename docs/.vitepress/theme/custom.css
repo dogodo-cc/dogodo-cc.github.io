@@ -26,8 +26,10 @@
     margin-right: auto;
 }
 
-.max-w-500 {
-    max-width: 500px;
+@media (min-width: 450px) {
+    .max-w-500 {
+        max-width: 500px;
+    }
 }
 
 .center {
