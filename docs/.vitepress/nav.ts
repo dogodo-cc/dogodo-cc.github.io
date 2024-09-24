@@ -5,6 +5,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
         {
             text: '2024',
             items: [
+                { text: '云南旅行', link: '/article/2024/yunnan/index.md' },
                 { text: '骑行经验', link: '/article/2024/bicycle/index.md' },
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
                 { text: '回忆-我和黑莓', link: '/article/2024/blackberry/index.md' },
