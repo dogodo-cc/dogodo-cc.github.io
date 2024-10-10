@@ -60,6 +60,17 @@ export default defineConfig({
             })();
             `,
         ],
+
+        // 谷歌分析
+        ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-5XLPMWJX5J' }],
+        [
+            'script',
+            {},
+            `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5XLPMWJX5J');`,
+        ],
     ],
     themeConfig: {
         // logo: { src: '/logo-black.png' },
