@@ -6,6 +6,7 @@
 <PicturesScrollX>
     <img src="./assets/year1.jpeg" />
     <img src="./assets/year2.jpeg" />
+    <img src="./assets/year3.jpeg" />
 </PicturesScrollX>  
 </div>
 
