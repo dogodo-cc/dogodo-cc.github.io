@@ -63,6 +63,23 @@ defaults read -g com.apple.mouse.scaling
 defaults write -g com.apple.mouse.scaling 12
 ```
 
+### Finder 的显示设置
+
+![](./finder.png)
+
+## 快速操作
+
+创建的快速操作脚本会保存在： /Users/alan/Library/Services
+
+### vscode 打开
+
+打开`自动操作`
+![](./快速操作/vscode-open.png)
+![](./快速操作/vscode-open2.png)
+
+效果：
+![](./快速操作/vscode-open3.png)
+
 ## 必装软件
 
 ### 自动切换输入法
@@ -306,3 +323,22 @@ git config --global user.name "你的名字"
 ```
 
 以上我们就完成了 web 开发的最基本设置。可以 git clone 你的代码仓库到本地进行开发了。
+
+参考配置：
+
+/Users/alan/.ssh/config
+
+```
+Host 阿里云
+  HostName 39.101.76.167
+  User root
+  IdentityFile /Users/alan/.ssh/vscode-ssh.pem
+Host github.com
+  HostName ssh.github.com
+  Port 443
+  User git
+Host git.cocos.org
+  HostName git.cocos.org
+  User git
+  IdentityFile /Users/alan/.ssh/id_rsa
+```
