@@ -147,6 +147,8 @@ Mac 上是通过`「中/英」`来切换 ABC 输入法和拼音输入法，本�
 
 避免和系统自带的左右分屏冲突，moom 只保留鼠标拖拽到屏幕边缘触发分屏.
 
+> 升级到 mac os 15.0.1 之后弃用，系统自带左右分屏了。
+
 ### iHost
 
 管理本地 host 的免费软件，可以轻松的对 host 文件进行编辑和分类，自由的切换分组。[Github](https://github.com/toolinbox/iHosts)
@@ -213,10 +215,11 @@ Failed to connect to raw.githubusercontent.com port 443: Connection refused
 -   [chrome](https://www.google.cn/chrome/index.html) 登陆谷歌账号可以同步所有书签和账号密码
 -   [vscode](https://code.visualstudio.com/) 登陆 github 账号可以同步所有偏好设置和插件
 -   [Git](https://git-scm.com/downloads)
--   [nvm](https://github.com/nvm-sh/nvm) 用于管理 node
--   [node](https://nodejs.org/en/) 推荐直接使用 nvm 安装。
+-   ~~[nvm](https://github.com/nvm-sh/nvm) 用于管理 node~~ pnpm env 替代了
+-   ~~[node](https://nodejs.org/en/) 推荐直接使用 nvm 安装。~~
 -   [oh-my-zsh](https://ohmyz.sh/) (提供非常多的快捷命令：如 gst = git status)
 -   [HomeBrew](https://brew.sh/zh-cn/) （安装开发软件很实用 如 brew install nginx）[墙内安装脚本](https://gitee.com/cunkai/HomebrewCN)
+-   [remote desktop](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac#what-about-the-mac-beta-client) 用于访问 window 测试机
 
 #### oh-my-zsh
 
