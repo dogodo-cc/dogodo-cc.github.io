@@ -1,14 +1,14 @@
 {
     "type": "module",
     "scripts": {
-        "docs:dev": "vitepress dev docs --host --port=3001",
-        "docs:build": "vitepress build docs",
-        "docs:preview": "vitepress preview docs"
+        "dev": "vitepress dev docs --host --port=3001",
+        "build": "vitepress build docs",
+        "preview": "vitepress preview docs"
     },
     "devDependencies": {
-        "vitepress": "^1.4.0"
+        "vitepress": "^1.4.1"
     },
     "dependencies": {
-        "ant-design-vue": "^4.2.3"
+        "ant-design-vue": "^4.2.5"
     }
 }
