@@ -137,6 +137,11 @@ export default defineConfig({
         darkModeSwitchTitle: '切换到深色模式',
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/dogodo-cc' }],
+
+        footer: {
+            message: '互联网的自留地',
+            copyright: '备案号:<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备20011002号-1</a>',
+        },
     },
     markdown: {
         lineNumbers: false,
