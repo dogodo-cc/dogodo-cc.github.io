@@ -5,6 +5,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
         {
             text: '2024',
             items: [
+                { text: '年终总结', link: '/article/2024/year-end/index.md' },
                 { text: '云南旅行', link: '/article/2024/yunnan/index.md' },
                 { text: '骑行经验', link: '/article/2024/bicycle/index.md' },
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
@@ -88,6 +89,7 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
                 { text: 'Hello build', link: '/work/cocos/hello-build.md' },
                 { text: '短链接', link: '/work/cocos/short-url/index.md' },
                 { text: '多版本多语言文档', link: '/work/cocos/多版本多语言文档/index.md' },
+                { text: 'Creator 插件开发', link: '/work/cocos/create-cocos-plugin/index.md' },
             ],
         },
     ];
