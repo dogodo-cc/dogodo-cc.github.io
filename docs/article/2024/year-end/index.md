@@ -106,7 +106,6 @@ npm create cocos-plugin@latest
 <PicturesScrollX :width="300">
 <img src="./02/offer1.jpeg" />
 <img src="./02/offer2.jpeg" />
-
 </PicturesScrollX>
 <PictureTip>权衡之后，谢绝了</PictureTip>
 
@@ -369,7 +368,6 @@ npm create cocos-plugin@latest
 <img src="./04/03-i.jpeg" />
 <img src="./04/03-j.jpeg" />
 </PicturesScrollX>
-<PictureTip>横向滚动，浏览更多</PictureTip>
 
 由于都是周边活动，我还把之前的小米滑板车给升级了一番，加了前座椅，加了后货篮，现在简直就是遛娃神器。
 

@@ -86,7 +86,6 @@
 <img src="./assets/haichan/food/8.jpeg" />
 <img src="./assets/haichan/food/9.jpeg" />
 </PicturesScrollX>
-<PictureTip>可以横向滑动查看图片</PictureTip>
 
 这段时间应该是最快乐的，没有房贷，没有任何负担。我们还经常去参加徒步客，爬爬山。周末就在厦门公园走走。
 
