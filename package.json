@@ -10,5 +10,8 @@
     },
     "dependencies": {
         "ant-design-vue": "^4.2.6"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.29.1"
     }
 }
