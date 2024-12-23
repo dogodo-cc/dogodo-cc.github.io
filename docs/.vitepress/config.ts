@@ -25,8 +25,8 @@ export default defineConfig({
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
-        ['meta', { property: 'og:image', content: 'https://www.90s.co/maskable-icon-512x512.png' }],
-        ['meta', { property: 'og:url', content: 'https://www.90s.co/' }],
+        ['meta', { property: 'og:image', content: 'https://weihai.dogodo.cc/maskable-icon-512x512.png' }],
+        ['meta', { property: 'og:url', content: 'https://weihai.dogodo.cc/' }],
 
         // #region snippet
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
@@ -93,7 +93,7 @@ export default defineConfig({
                 items: [
                     {
                         text: '空号检测',
-                        link: 'http://konghao.90s.co',
+                        link: 'https://konghao.dogodo.cc',
                     },
                 ],
             },
@@ -102,15 +102,15 @@ export default defineConfig({
             //     items: [
             //         {
             //             text: '建发时尚周',
-            //             link: 'https://90s.co/website/ifw/',
+            //             link: 'website/ifw/',
             //         },
             //         {
             //             text: '晋江青商会',
-            //             link: 'https://90s.co/website/young/',
+            //             link: 'website/young/',
             //         },
             //         {
             //             text: '英合律师所',
-            //             link: 'https://90s.co/website/yinghe/',
+            //             link: 'website/yinghe/',
             //         },
             //     ],
             // },
@@ -147,7 +147,7 @@ export default defineConfig({
         lineNumbers: false,
     },
     sitemap: {
-        hostname: 'https://www.90s.co',
+        hostname: 'https://weihai.dogodo.cc/',
     },
     vite: {
         resolve: {
