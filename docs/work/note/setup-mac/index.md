@@ -165,7 +165,7 @@ Mac 上是通过`「中/英」`来切换 ABC 输入法和拼音输入法，本�
 ![](./input/地球切换输入法.png)
 
 今天发现一个小窍门，可以先在输入法中添加一个英文输入法，此时默认的 ABC 输入法就可以被删除了。然后微信输入法成功变成了第一位，成为默认输入法。
-<video src="https://www.90s.co/videos/设置默认输入法.mov" controls />
+<video src="https://weihai.dogodo.cc/videos/设置默认输入法.mov" controls />
 <PictureTip>设置过程</PictureTip>
 
 直到今天，关于输入法的设置应该算是终结了，可以保持默认一直都是微信输入法，不管怎么切换应用都是它。而且支持特定应用使用指定的输入语言。最开心的是这一切无需其他软件配合完成。

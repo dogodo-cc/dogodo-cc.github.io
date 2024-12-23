@@ -1,6 +1,6 @@
-# 90s-2024
+# 甜甜的泥土
 
-袁炜海博客站
+袁炜海博客站 weihai.dogodo.cc
 
 ## mac sips
 
