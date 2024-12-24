@@ -13,6 +13,7 @@
 
 /* 代码块，原来是是 margin: 16px -24px, 会造成移动端的横向滚动 */
 .vp-doc div[class*='language-'],
+.vp-code-group .tabs,
 .vp-block {
     margin: 16px 0;
 }
