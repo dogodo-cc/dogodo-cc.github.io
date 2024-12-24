@@ -9,7 +9,7 @@ hero:
     text: ON THE WAY
     tagline: 让工作更有趣 让生活更美好
     image:
-        src: /home-logo.png
+        src: /logo.png
         alt: 住海沧的出租屋桌面
     actions:
         - theme: brand

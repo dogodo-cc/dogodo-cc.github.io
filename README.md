@@ -12,4 +12,4 @@ sips -s format jpeg 2021.heic --out 2021.jpeg
 
 @vite-pwa/assets-generator 下载这个包（不加在 package.json 是因为它容易下载失败，影响正常工作流）
 
-npx pwa-assets-generator --preset minimal-2023 docs/public/logo.png
+npx pwa-assets-generator --preset minimal-2023 path/to/logo.png

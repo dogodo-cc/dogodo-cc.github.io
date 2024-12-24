@@ -73,7 +73,7 @@ export default defineConfig({
         ],
     ],
     themeConfig: {
-        // logo: { src: '/logo-black.png' },
+        // logo: { src: '/logo.png' }, 不好看，暂时不用
         externalLinkIcon: true,
 
         nav: [
