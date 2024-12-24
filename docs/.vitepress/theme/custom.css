@@ -44,3 +44,12 @@
 .text-center {
     text-align: center;
 }
+
+@media (max-width: 750px) {
+    .VPFeature {
+        /* 在移动端首页的 feature 不要显示图标，内容更紧凑好看 */
+        .icon {
+            display: none;
+        }
+    }
+}
