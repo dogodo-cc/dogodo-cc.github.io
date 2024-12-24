@@ -2,11 +2,12 @@ import { defineConfig } from 'vitepress';
 import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
 import type { DefaultTheme } from 'vitepress';
+import { withMermaid } from 'vitepress-plugin-mermaid';
 
-export default defineConfig({
+const config = defineConfig({
     title: '甜甜的泥土',
     titleTemplate: '甜甜的泥土',
-    description: '袁炜海的博客站，编程路上的一些记录',
+    description: '记录工作，生活，女儿成长',
     lang: 'zh-CN',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -139,7 +140,7 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/dogodo-cc' }],
 
         footer: {
-            message: '互联网的自留地',
+            message: '我的互联网自留地',
             copyright: '备案号:<a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">闽ICP备20011002号-1</a>',
         },
     },
@@ -161,3 +162,5 @@ export default defineConfig({
         },
     },
 });
+
+export default withMermaid(config);
