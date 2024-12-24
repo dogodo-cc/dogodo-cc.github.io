@@ -53,3 +53,25 @@
         }
     }
 }
+
+/* 如下这些样式本来需要在首页的 index.md 但是不知道为嘛不生效 */
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #df2c3f 30%, #fed5b8);
+
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #df2c3f 50%, #fed5b8 50%);
+    --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+    :root {
+        --vp-home-hero-image-filter: blur(56px);
+    }
+}
+
+@media (min-width: 960px) {
+    :root {
+        --vp-home-hero-image-filter: blur(68px);
+    }
+}

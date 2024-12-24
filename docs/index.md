@@ -33,25 +33,3 @@ features:
       title: 女儿成长
       details: 记录玥玥的生活日常，人生最幸福的事情就是陪伴一个生命的成长
 ---
-
-<style>
-:root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #df2c3f 30%, #fed5b8);
-
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #df2c3f 50%, #fed5b8 50%);
-  --vp-home-hero-image-filter: blur(44px);
-}
-
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
-}
-
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(68px);
-  }
-}
-</style>
