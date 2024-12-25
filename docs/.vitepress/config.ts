@@ -91,15 +91,15 @@ const config = defineConfig({
                 link: '/work/',
                 activeMatch: '^/work/',
             },
-            {
-                text: '工具',
-                items: [
-                    {
-                        text: '空号检测',
-                        link: 'https://konghao.dogodo.cc',
-                    },
-                ],
-            },
+            // {
+            //     text: '工具',
+            //     items: [
+            //         {
+            //             text: '空号检测',
+            //             link: 'https://konghao.dogodo.cc',
+            //         },
+            //     ],
+            // },
             // {
             //     text: '官网案例',
             //     items: [
