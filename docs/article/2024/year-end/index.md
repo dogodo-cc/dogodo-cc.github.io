@@ -34,11 +34,11 @@
 
 组长和经理都奔赴字节跳动飞黄腾达去了，这应该算是公司最大的损失，不过对于他们个人而言，真的是飞黄腾达了。除了羡慕只有羡慕。
 
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./02/jare.jpeg" />
 <img src="./02/jare2.jpeg" />
 <img src="./02/sj.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 斯杰就只有背影了，当时不知道他也要走，所以主要是拍佳伟。他们都是非常不错的领导。
 
@@ -103,11 +103,11 @@ npm create cocos-plugin@latest
 
 现在的就业行情非常不乐观，导致我已经求稳大于冒险，今年拒绝了一个薪资较高的 Offer，就是求稳心态。对方是新公司，cocos 虽然现状很差，但是我依然相信它的未来会更好，现在应该已经是谷底了，任何一步，都是向上。
 
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./02/offer1.jpeg" />
 <img src="./02/offer2.jpeg" />
-</PicturesScrollX>
-<PictureTip>权衡之后，谢绝了</PictureTip>
+</Pictures>
+<Tip>权衡之后，谢绝了</Tip>
 
 ## 玥玥成长
 
@@ -180,7 +180,7 @@ npm create cocos-plugin@latest
 这种前后缀都是 `爸爸` 的语句结构，把老父亲那本就脆弱的原则踩的稀碎。
 
 ![](./yueyue/05.jpeg)
-<PictureTip>睡前必备流程，坐一下爸爸的衣柜</PictureTip>
+<Tip>睡前必备流程，坐一下爸爸的衣柜</Tip>
 
 还遗传了她爸的爱好，特别喜欢唱歌，早上睡醒的时候，会拿着小毛毛虫点读笔在那边跟着唱，头还会跟着节拍摇起来。
 
@@ -199,7 +199,7 @@ npm create cocos-plugin@latest
 现在长大了，自我意识更强了，也很容易生气，稍微不符合她的心意，就会生气哭闹。你哄不好的那种，而且还学会趴地上这样的招数。所幸大多数时间都是乖巧可爱的。哭闹的时候就当作对老父亲耐心的一种历练吧。
 
 ![](./yueyue/06.jpeg)
-<PictureTip>焦急的等待吃西瓜</PictureTip>
+<Tip>焦急的等待吃西瓜</Tip>
 
 今年对她的陪伴时间应该算很充足了（对于一个上班族而言），每天早上起床我基本会等她醒来再走，不至于醒来看不见爸爸和妈妈，她妈妈每天七点就起床去上班了，这样可以每天下午五点回家。
 
@@ -212,20 +212,20 @@ npm create cocos-plugin@latest
 小区有很多同龄小朋友，所以她们的社交圈还是挺广的，每天都有几个小伙伴可以一起玩。只是苦了她娘，现在做食物赠送给小朋友，都要准备好多份。
 
 ![](./yueyue/4-1.jpeg)
-<PictureTip>做小饼干</PictureTip>
+<Tip>做小饼干</Tip>
 
 ![](./yueyue/4-2.jpeg)
-<PictureTip>中秋送自己做的月饼</PictureTip>
+<Tip>中秋送自己做的月饼</Tip>
 
 ![](./yueyue/4-3.jpeg)
-<PictureTip>送圣诞小糖果</PictureTip>
+<Tip>送圣诞小糖果</Tip>
 
 ![](./yueyue/4-4.jpeg)
-<PictureTip>一起玩的小伙伴</PictureTip>
+<Tip>一起玩的小伙伴</Tip>
 ![](./yueyue/4-5.jpeg)
 
 ![](./yueyue/4-6.jpeg)
-<PictureTip>参加好朋友的生日野餐</PictureTip>
+<Tip>参加好朋友的生日野餐</Tip>
 
 生活中多了这么一个小不点确实增添不少乐趣，有苦也是甜的。
 
@@ -234,16 +234,16 @@ npm create cocos-plugin@latest
 今年其实拍了很多照片，怕篇幅过长，就挑选一些最有生活感的吧。
 
 ![](./yueyue/07-1.jpeg)
-<PictureTip>我们在整理东西，这个小家伙也要跟前跟后的帮倒忙，满脸坏心思的样子</PictureTip>
+<Tip>我们在整理东西，这个小家伙也要跟前跟后的帮倒忙，满脸坏心思的样子</Tip>
 
 ![](./yueyue/07-2.jpeg)
-<PictureTip>得到了认识不久但疯狂爱上的酸奶</PictureTip>
+<Tip>得到了认识不久但疯狂爱上的酸奶</Tip>
 
 ![](./yueyue/07-3.jpeg)
-<PictureTip>每次洗澡都要玩泡泡</PictureTip>
+<Tip>每次洗澡都要玩泡泡</Tip>
 
 ![](./yueyue/07-4.jpeg)
-<PictureTip>洗完澡的活动都是看书</PictureTip>
+<Tip>洗完澡的活动都是看书</Tip>
 ![](./yueyue/07-4b.jpeg)
 
 ![](./yueyue/07-5.jpeg)
@@ -288,12 +288,12 @@ npm create cocos-plugin@latest
 
 趁着这次大家都在老家，我们开车去周边玩了半天，其实去哪里不重要，一家人在一起，走走看看，感受一下家人都在的时光就好了。
 
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./03/06-1.jpeg" />
 <img src="./03/06-2.jpeg" />
 <img src="./03/06-3.jpeg" />
 <img src="./03/06-4.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 ### 收稻谷
 
@@ -330,7 +330,7 @@ npm create cocos-plugin@latest
 如今她们各个长得高高大大的，活力无限，只有看着她们，才能意识到自己可能真的老了。
 
 ![](./03/01.jpeg)
-<PictureTip>一代人终将老去，但总有人正在年轻</PictureTip>
+<Tip>一代人终将老去，但总有人正在年轻</Tip>
 
 ## 生活
 
@@ -349,14 +349,14 @@ npm create cocos-plugin@latest
 夏天经常去家附近的海滩让玥玥玩水，玩沙子，今年会展那边新开了一条海岸线，我骑车过去只要 10 分钟左右。风景很好，只是没有很长，期待延长线早日建好开放。
 
 ![](./04/02-a.jpeg)
-<PictureTip>应该算是家门口的沙滩了吧？</PictureTip>
+<Tip>应该算是家门口的沙滩了吧？</Tip>
 ![](./04/02-b.jpeg)
 
 ![](./04/02-c.jpeg)
 
 天气凉爽之后，我们几乎每个周末都相约去公园遛娃，亲近自然，给小朋友丰富的户外活动。
 
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./04/03-a.jpeg" />
 <img src="./04/03-b.jpeg" />
 <img src="./04/03-c.jpeg" />
@@ -367,23 +367,23 @@ npm create cocos-plugin@latest
 <img src="./04/03-h.jpeg" />
 <img src="./04/03-i.jpeg" />
 <img src="./04/03-j.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 由于都是周边活动，我还把之前的小米滑板车给升级了一番，加了前座椅，加了后货篮，现在简直就是遛娃神器。
 
 小米这款滑板车的质量非常好，到今年已经用了 5 年了，而且是高强度使用，因为夏天我都是骑它往返地铁站的。续航从 45 公里衰减到现在的 25 公里左右。已经算不错了。里面的控制器我自己更换过一个，其实这玩意的组成特别简单（电池+控制器+车架+轮子）就没了。 只要车架不坏，其他任何配件坏了我都可以自己更换了。（车架非常结实，感觉正常使用不会坏）
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./04/04-1.jpeg" />
 <img src="./04/04-2.jpeg" />
 <img src="./04/04-3.jpeg" />
 <img src="./04/04-4.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 这个实心胎很难安装，我自己搞半天最终还是找师傅搞定。不过现在知道流程和使劲的技巧，下次我也可以自己装了。按这个轮胎的质量看，下次换胎可能又是三年以后了。
 
 今年学会了补胎换胎，希望明年有时间研究下变速器如何安装调节
 ![](./04/05.png)
-<PictureTip>享受亲力亲为的乐趣</PictureTip>
+<Tip>享受亲力亲为的乐趣</Tip>
 
 今年我们小家庭还一起去了一趟云南，具体可以看 [云南旅行](../yunnan/index.md)。希望明年也可以带玥子去一个地方，但是行程要控制得短一点，离家太久她不太适应，作息也会影响到。
 
@@ -398,4 +398,4 @@ npm create cocos-plugin@latest
 希望玥玥依然开心健康成长。
 
 ![](./yueyue/08.jpeg)
-<PictureTip>写于玥玥的两岁</PictureTip>
+<Tip>写于玥玥的两岁</Tip>

@@ -25,10 +25,10 @@ Slots 定制组件有个很大的限制是我们传入的 Slot 内容，只能�
 
 如下图所示：
 
-<div style="display: flex;align-items: center;justify-content: space-evenly;overflow: auto;">
+<Pictures>
     <img src="./1.png" />
     <img src="./2.png" />
-</div>
+</Pictures>
 
 如果封装一个新手引导的组件，需要满足这 2 个 UI 风格截然不同的设计稿。
 仅仅通过 Props 和 Slots 的定制方案是不优雅的，倘若强行配置，也会导致代码结构变复杂，不好维护。

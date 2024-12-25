@@ -2,15 +2,15 @@
     <div class="pictures-scroll-x">
         <slot />
     </div>
-    <PictureTip>横向滑动，查看更多</PictureTip>
+    <Tip>横向滑动，查看更多</Tip>
 </template>
 <script setup>
 import { computed } from 'vue';
-import PictureTip from './picture-tip.vue';
+import Tip from './picture-tip.vue';
 const props = defineProps({
     width: {
         type: Number,
-        default: 200,
+        default: 300,
     },
 });
 

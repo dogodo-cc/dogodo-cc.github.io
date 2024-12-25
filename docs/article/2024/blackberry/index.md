@@ -18,7 +18,7 @@
 
 ![](./assets/友人网.png)
 
-<PictureTip>先见之明的保留了一张截图</PictureTip>
+<Tip>先见之明的保留了一张截图</Tip>
 
 用段位来表示论坛的等级，需要多发帖，多回复，被点赞就可以积累经验值。那时候还想成为九段大佬呢！
 
@@ -26,7 +26,7 @@
 
 ![](./assets/友人网-暂停服务.jpg)
 
-<PictureTip>当初很机智的截图</PictureTip>
+<Tip>当初很机智的截图</Tip>
 
 ## 折腾
 
@@ -42,7 +42,7 @@
 <a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-6.jpg" /></a-col>
 </a-row>
 
-<EmptyLine />
+<br/>
 
 **我前前后后折腾过的黑莓手机有： 7290，8310，9000，9900，Classic**
 
@@ -51,7 +51,7 @@
 黑莓 9000 应该是 bold 系列非常经典的型号了。之前在论坛就一直听大家对它的赞叹。包括握持手感，外放音质，屏幕显示都非常棒。
 
 ![](./assets/9000/9000.jpeg)
-<PictureTip>当年拿着一件牛仔裤去草坪给它拍照</PictureTip>
+<Tip>当年拿着一件牛仔裤去草坪给它拍照</Tip>
 
 这是我拥有的第一款黑莓手机，视如珍宝，真的超级喜欢这个外观和手感。拿着很踏实，当年一直比较排斥触屏操作，觉得按键的体验才是最符合人体工学的。
 
@@ -75,7 +75,7 @@
 
 ![](./assets/9000/1.jpg)
 
-<PictureTip>藏地密码就是在黑莓 9000 上看完的</PictureTip>
+<Tip>藏地密码就是在黑莓 9000 上看完的</Tip>
 
 ![](./assets/9000/2.jpg)
 
@@ -139,10 +139,10 @@
 ## 黑莓 8310
 
 小巧，结实，复古。（复古不合适，它本来就是个 2007 年发布的古董，哈哈）
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./assets/8310/1.jpeg" />
 <img src="./assets/8310/2.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 ## 黑莓 Classic
 
@@ -158,11 +158,11 @@ Classic 是黑莓推出的末代机型了，从命名也可以看出，算是给
 
 现在唯一的乐趣就是陪我家小玥子玩了，看她一天天长大，精神也可以获得极大的满足。
 
-<PicturesScrollX :width="300">
+<Pictures :width="300">
 <img src="./assets/classic/1.jpeg" />
 <img src="./assets/classic/2.jpeg" />
 <img src="./assets/classic/3.jpeg" />
-</PicturesScrollX>
+</Pictures>
 
 ## 黑莓 7290
 
@@ -179,7 +179,7 @@ Classic 是黑莓推出的末代机型了，从命名也可以看出，算是给
 由于 7290 是 2004 年发布的，实在久远，当时折腾它安装软件，导入图片都废了不少功夫。
 
 ![](./assets/7290/3.png)
-<PictureTip>还写了教程去友人网混经验值</PictureTip>
+<Tip>还写了教程去友人网混经验值</Tip>
 
 这个手机非常有年代感，虽然是塑料机身，但是手感非常好。圆润，踏实。由于屏幕是被动光显示，所以阳光下非常方便阅读，和当年黑白屏的诺基亚是一样的。
 
@@ -196,7 +196,7 @@ Classic 是黑莓推出的末代机型了，从命名也可以看出，算是给
 更夸张的是由于此时已经没有合适的微信可以再黑莓 7.0 系统上运行，我直接删除了所有微信好友，放弃使用微信。
 
 ![](./assets/9900/1.jpeg)
-<PictureTip>为了使用 9900，弃用微信</PictureTip>
+<Tip>为了使用 9900，弃用微信</Tip>
 
 随着移动支付越普及，公司微信群经常发红包等各种因素，最终 9900 也没用多久就收藏到抽屉去了。每年把那些古董拿出来，给电池充充电成了我特有的放松方式。
 
@@ -223,7 +223,7 @@ Classic 是黑莓推出的末代机型了，从命名也可以看出，算是给
 | 黑莓 classic | 2014 年  |        2024 年        |
 
 ![](./assets/group-photo.jpg)
-<PictureTip>大学时期折腾过的手机</PictureTip>
+<Tip>大学时期折腾过的手机</Tip>
 
 ## 结尾
 

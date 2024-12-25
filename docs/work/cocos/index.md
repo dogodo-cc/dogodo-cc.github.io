@@ -3,11 +3,11 @@
         <img class="cocos-logo" src="./assets/cocos-logo.png" />
     </a>
     
-<PicturesScrollX>
+<Pictures>
     <img src="./assets/year1.jpeg" />
     <img src="./assets/year2.jpeg" />
     <img src="./assets/year3.jpeg" />
-</PicturesScrollX>  
+</Pictures>  
 </div>
 
 <style>

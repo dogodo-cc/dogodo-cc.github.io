@@ -30,11 +30,11 @@ pageClass: about-this-site
 
 点击该 APP 图标，就能以应用的方式打开本网站，它将比在浏览器中提供更好的体验
 
-<PicturesScrollX>
+<Pictures>
     <img src="./assets/1.jpg" />
     <img src="./assets/2.jpg" />
     <img src="./assets/3.jpg" />
-</PicturesScrollX>
+</Pictures>
 
 ## PWA 的 hack
 
