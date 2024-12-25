@@ -1,19 +1,12 @@
 <script setup lang="ts">
 import { onKeyStroke } from '@vueuse/core';
 import { onContentUpdated } from 'vitepress';
-import { nextTick, ref, watch } from 'vue';
+import { ref, watch } from 'vue';
 import { useData } from 'vitepress';
-import { resolveTitle } from 'vitepress/dist/client/theme-default/composables/outline.js';
-import VPDocOutlineItem from 'vitepress/dist/client/theme-default/components/VPDocOutlineItem.vue';
-
-import type { Header } from 'vitepress';
-export type MenuItem = Omit<Header, 'slug' | 'children'> & {
-    element: HTMLHeadElement;
-    children?: MenuItem[];
-};
+import ProgressBar from './ProgressBar.vue';
 
 const props = defineProps<{
-    headers: MenuItem[];
+    headers: [];
     navHeight: number;
 }>();
 
@@ -44,51 +37,23 @@ onKeyStroke('Escape', () => {
 onContentUpdated(() => {
     open.value = false;
 });
-
-function toggle() {
-    open.value = !open.value;
-    vh.value = window.innerHeight + Math.min(window.scrollY - props.navHeight, 0);
-}
-
-function onItemClick(e: Event) {
-    if ((e.target as HTMLElement).classList.contains('outline-link')) {
-        // disable animation on hash navigation when page jumps
-        if (items.value) {
-            items.value.style.transition = 'none';
-        }
-        nextTick(() => {
-            open.value = false;
-        });
-    }
-}
-
+// #region snippet
 function scrollToTop() {
     open.value = false;
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    // 故意将移动端的滚动对象由root改为 body，因为root的滚动条样式不可控
+    const isRootOverflowHidden = getComputedStyle(document.documentElement).getPropertyValue('overflow-y') === 'hidden';
+    const win = isRootOverflowHidden ? document.body : window;
+    win.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
+// #endregion snippet
 </script>
 
 <template>
     <div class="VPLocalNavOutlineDropdown" :style="{ '--vp-vh': vh + 'px' }" ref="main">
-        <button @click="toggle" :class="{ open }" v-if="headers.length > 0">
-            <span class="menu-text">{{ resolveTitle(theme) }}</span>
-            <span class="vpi-chevron-right icon" />
-        </button>
-        <button @click="scrollToTop" v-else>
+        <button @click="scrollToTop">
             {{ theme.returnToTopLabel || 'Return to top' }}
         </button>
-        <Transition name="flyout">
-            <div v-if="open" ref="items" class="items" @click="onItemClick">
-                <div class="header">
-                    <a class="top-link" href="#" @click="scrollToTop">
-                        {{ theme.returnToTopLabel || 'Return to top' }}
-                    </a>
-                </div>
-                <div class="outline">
-                    <VPDocOutlineItem :headers="headers" />
-                </div>
-            </div>
-        </Transition>
+        <ProgressBar />
     </div>
 </template>
 
@@ -127,7 +92,7 @@ function scrollToTop() {
     vertical-align: middle;
     margin-left: 2px;
     font-size: 14px;
-    transform: rotate(0) /*rtl:rotate(180deg)*/;
+    transform: rotate(0deg);
     transition: transform 0.25s;
 }
 
@@ -142,7 +107,6 @@ function scrollToTop() {
 }
 
 .open > .icon {
-    /*rtl:ignore*/
     transform: rotate(90deg);
 }
 

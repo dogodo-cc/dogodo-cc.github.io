@@ -1,4 +1,4 @@
-@import url(./custom-root.css);
+/* @import url(./custom-root.css); 现在只有首页需要隐藏原生滚动条 */
 
 /* 上下页 按左右对半排列 */
 .prev-next {

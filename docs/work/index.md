@@ -8,3 +8,7 @@ import { getWorks } from '../.vitepress/nav.ts'
 
 const articles = getWorks();
 </script>
+
+<style>
+ @import url(../.vitepress/theme/custom-root.css);
+</style>
