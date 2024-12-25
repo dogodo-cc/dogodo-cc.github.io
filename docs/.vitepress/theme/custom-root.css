@@ -3,7 +3,7 @@
 :root 的滚动条无法通过 css 隐藏
 所以把滚动应用到 body，再针对 body 进行滚动条隐藏
 */
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     :root {
         height: 100%;
         overflow: hidden;
@@ -12,14 +12,12 @@
         height: 100%;
         overflow-y: auto;
 
-        /* 标准的隐藏滚动条 */
         scrollbar-width: none;
         scrollbar-color: transparent;
 
-        /* webkit 内核隐藏滚动条 */
         &::-webkit-scrollbar {
             appearance: none;
             display: none;
         }
     }
-}
+} */
