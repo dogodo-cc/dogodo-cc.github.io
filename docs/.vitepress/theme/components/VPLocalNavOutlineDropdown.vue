@@ -4,7 +4,7 @@ import { onContentUpdated } from 'vitepress';
 import { nextTick, ref, watch } from 'vue';
 import { useData } from 'vitepress';
 import { resolveTitle } from 'vitepress/dist/client/theme-default/composables/outline.js';
-import VPDocOutlineItem from 'vitepress/dist/client/theme-default/components/VPDocOutlineItem.vue';
+import VPDocOutlineItem from './VPDocOutlineItem.vue';
 
 import type { Header } from 'vitepress';
 export type MenuItem = Omit<Header, 'slug' | 'children'> & {
@@ -62,10 +62,15 @@ function onItemClick(e: Event) {
     }
 }
 
+// #region snippet
 function scrollToTop() {
     open.value = false;
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    // 故意将移动端的滚动对象由root改为 body，因为root的滚动条样式不可控
+    const isRootOverflowHidden = getComputedStyle(document.documentElement).getPropertyValue('overflow-y') === 'hidden';
+    const win = isRootOverflowHidden ? document.body : window;
+    win.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 }
+// #endregion snippet
 </script>
 
 <template>

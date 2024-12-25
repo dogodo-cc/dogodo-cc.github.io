@@ -6,7 +6,3 @@ import { getArticles } from '../.vitepress/nav.ts'
 
 const articles = getArticles();
 </script>
-
-<style>
- @import url(../.vitepress/theme/custom-root.css);
-</style>

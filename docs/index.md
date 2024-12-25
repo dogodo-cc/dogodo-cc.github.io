@@ -30,7 +30,3 @@ features:
     - title: 👧 女儿成长
       details: 记录玥玥的生活日常，人生最幸福的事情就是陪伴一个生命的成长
 ---
-
-<style>
- @import url(./.vitepress/theme/custom-root.css);
-</style>
