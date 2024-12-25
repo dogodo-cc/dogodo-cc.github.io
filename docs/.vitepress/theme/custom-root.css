@@ -4,7 +4,7 @@
 所以把滚动应用到 body，再针对 body 进行滚动条隐藏
 */
 @media (max-width: 750px) {
-    :root.home {
+    :root {
         height: 100%;
         overflow: hidden;
     }
