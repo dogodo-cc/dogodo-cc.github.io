@@ -40,7 +40,7 @@ pageClass: about-this-site
 
 为了让 PWA 模式更接近原生 APP 的体验，我将网页的滚动条去掉了。为了去掉这个滚动条费了不少功夫。
 
-经过几番折腾发现在 :root 级别里对滚动条进行 css 的设置是无效的。
+经过几番折腾发现在 `:root` 级别里对滚动条进行 css 的设置是无效的。
 
 所以为了隐藏滚动条，我将 `root` 设置了 `overflow:hidden;` 将滚动的容器设置到 `body` 上。
 
@@ -48,13 +48,15 @@ pageClass: about-this-site
 
 <<< @/.vitepress/theme/custom-root.css
 
-这样设置之后滚动条如期消失了，不过影响了 `页面导航` 的锚点定位。经过一番思考，索性去掉 `页面导航` ，直接显示 `回到顶部`。
+这样设置之后滚动条如期消失了，不过影响了 `页面导航` 的锚点定位。
 
-因为 `回到顶部` 算是一个高频功能，但是之前被隐藏在了 `页面导航` 的弹出框里，现在干脆直接且只显示 `回到顶部`。
+于是定制了 `VPDocOutlineItem.vue` 组件，修改里面的锚点跳转的逻辑
+
+<<< @/.vitepress/theme/components/VPDocOutlineItem.vue#snippet{4,5}
 
 这样就涉及到对默认主题的定制，好在 vitepress 提供了原组件覆盖的方式。[重写内部组件](https://vitepress.dev/zh/guide/extending-default-theme#overriding-internal-components)
 
-我重写了 `VPLocalNavOutlineDropdown.vue` 组件
+我也修改了 `VPLocalNavOutlineDropdown.vue` 组件，为了让返回顶部的功能正常运行。
 
 <<< @/.vitepress/theme/components/VPLocalNavOutlineDropdown.vue#snippet
 

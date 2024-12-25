@@ -160,6 +160,10 @@ const config = defineConfig({
                     find: /^.*\/VPLocalNavOutlineDropdown\.vue$/,
                     replacement: fileURLToPath(new URL('./theme/components/VPLocalNavOutlineDropdown.vue', import.meta.url)),
                 },
+                {
+                    find: /^.*\/VPDocOutlineItem\.vue$/,
+                    replacement: fileURLToPath(new URL('./theme/components/VPDocOutlineItem.vue', import.meta.url)),
+                },
             ],
         },
     },

@@ -5,6 +5,7 @@ import { nextTick, ref, watch } from 'vue';
 import { useData } from 'vitepress';
 import { resolveTitle } from 'vitepress/dist/client/theme-default/composables/outline.js';
 import VPDocOutlineItem from './VPDocOutlineItem.vue';
+import ProgressBar from './ProgressBar.vue';
 
 import type { Header } from 'vitepress';
 export type MenuItem = Omit<Header, 'slug' | 'children'> & {
@@ -82,6 +83,7 @@ function scrollToTop() {
         <button @click="scrollToTop" v-else>
             {{ theme.returnToTopLabel || 'Return to top' }}
         </button>
+        <ProgressBar />
         <Transition name="flyout">
             <div v-if="open" ref="items" class="items" @click="onItemClick">
                 <div class="header">

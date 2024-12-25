@@ -10,18 +10,20 @@ defineProps<{
     root?: boolean;
 }>();
 
+// #region snippet
 function onClick({ target: el }: Event) {
-    const id = (el as HTMLAnchorElement).getAttribute('data-href')!.split('#')[1];
+    const id = (el as HTMLAnchorElement).href!.split('#')[1];
     const heading = document.getElementById(decodeURIComponent(id));
-    heading?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    heading?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     // heading?.focus({ preventScroll: true })
 }
+// #endregion snippet
 </script>
 
 <template>
     <ul class="VPDocOutlineItem" :class="root ? 'root' : 'nested'">
         <li v-for="{ children, link, title } in headers">
-            <a class="outline-link" :data-href="link" @click="onClick" :title="title">{{ title }}</a>
+            <a class="outline-link" :href="link" @click="onClick" :title="title">{{ title }}</a>
             <template v-if="children?.length">
                 <VPDocOutlineItem :headers="children" />
             </template>
