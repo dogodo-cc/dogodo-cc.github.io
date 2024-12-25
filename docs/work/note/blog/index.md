@@ -65,3 +65,9 @@ pageClass: about-this-site
 <<< @/.vitepress/theme/components/ProgressBar.vue
 
 经过这一番折腾，本站终于有了一个让我比较满意的 PWA 的表现形式。
+
+## 遗留的问题
+
+现在 PC 的体验是保留和 `vitepress` 一样。手机端进行了如上所述的定制。在 PWA 的模式下，和微信应用内打开都是非常完美的。但是在 Safari 上，只要点击一次锚点，那个页头部分就无法保持定位了。
+
+好在我自己基本都是通过 PWA 的模式查看，偶尔分享给少数朋友，他们是通过微信打开，所以通过手机端的 Safari 上查看的占比较少。就先不管了。Safari 那个视窗高度变来变去，出点问题也正常，比较我们做了 `hack`。
