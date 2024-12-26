@@ -35,9 +35,9 @@
 组长和经理都奔赴字节跳动飞黄腾达去了，这应该算是公司最大的损失，不过对于他们个人而言，真的是飞黄腾达了。除了羡慕只有羡慕。
 
 <Pictures :width="300">
-<img src="./02/jare.jpeg" />
-<img src="./02/jare2.jpeg" />
-<img src="./02/sj.jpeg" />
+<img loading="lazy" src="./02/jare.jpeg" />
+<img loading="lazy" src="./02/jare2.jpeg" />
+<img loading="lazy" src="./02/sj.jpeg" />
 </Pictures>
 
 斯杰就只有背影了，当时不知道他也要走，所以主要是拍佳伟。他们都是非常不错的领导。
@@ -97,15 +97,15 @@ npm create cocos-plugin@latest
 
 而我经常会请假一个小时，这样假如我是 09:30 上班，下午 5:30 就下班了。
 
-<img width="300" src="./02/1.jpeg" />
+<img loading="lazy" width="300" src="./02/1.jpeg" />
 
 所以对于工作本身，我是挺满意的，这份工作目前可以做到工作和生活都得到平衡。大家也不倦，没有互联网大厂的歪风邪气。也没有小公司的乱七八糟的需求。希望公司明年可以越来越好吧！
 
 现在的就业行情非常不乐观，导致我已经求稳大于冒险，今年拒绝了一个薪资较高的 Offer，就是求稳心态。对方是新公司，cocos 虽然现状很差，但是我依然相信它的未来会更好，现在应该已经是谷底了，任何一步，都是向上。
 
 <Pictures :width="300">
-<img src="./02/offer1.jpeg" />
-<img src="./02/offer2.jpeg" />
+<img loading="lazy" src="./02/offer1.jpeg" />
+<img loading="lazy" src="./02/offer2.jpeg" />
 </Pictures>
 <Tip>权衡之后，谢绝了</Tip>
 
@@ -289,10 +289,10 @@ npm create cocos-plugin@latest
 趁着这次大家都在老家，我们开车去周边玩了半天，其实去哪里不重要，一家人在一起，走走看看，感受一下家人都在的时光就好了。
 
 <Pictures :width="300">
-<img src="./03/06-1.jpeg" />
-<img src="./03/06-2.jpeg" />
-<img src="./03/06-3.jpeg" />
-<img src="./03/06-4.jpeg" />
+<img loading="lazy" src="./03/06-1.jpeg" />
+<img loading="lazy" src="./03/06-2.jpeg" />
+<img loading="lazy" src="./03/06-3.jpeg" />
+<img loading="lazy" src="./03/06-4.jpeg" />
 </Pictures>
 
 ### 收稻谷
@@ -357,26 +357,26 @@ npm create cocos-plugin@latest
 天气凉爽之后，我们几乎每个周末都相约去公园遛娃，亲近自然，给小朋友丰富的户外活动。
 
 <Pictures :width="300">
-<img src="./04/03-a.jpeg" />
-<img src="./04/03-b.jpeg" />
-<img src="./04/03-c.jpeg" />
-<img src="./04/03-d.jpeg" />
-<img src="./04/03-e.jpeg" />
-<img src="./04/03-f.jpeg" />
-<img src="./04/03-g.jpeg" />
-<img src="./04/03-h.jpeg" />
-<img src="./04/03-i.jpeg" />
-<img src="./04/03-j.jpeg" />
+<img loading="lazy" src="./04/03-a.jpeg" />
+<img loading="lazy" src="./04/03-b.jpeg" />
+<img loading="lazy" src="./04/03-c.jpeg" />
+<img loading="lazy" src="./04/03-d.jpeg" />
+<img loading="lazy" src="./04/03-e.jpeg" />
+<img loading="lazy" src="./04/03-f.jpeg" />
+<img loading="lazy" src="./04/03-g.jpeg" />
+<img loading="lazy" src="./04/03-h.jpeg" />
+<img loading="lazy" src="./04/03-i.jpeg" />
+<img loading="lazy" src="./04/03-j.jpeg" />
 </Pictures>
 
 由于都是周边活动，我还把之前的小米滑板车给升级了一番，加了前座椅，加了后货篮，现在简直就是遛娃神器。
 
 小米这款滑板车的质量非常好，到今年已经用了 5 年了，而且是高强度使用，因为夏天我都是骑它往返地铁站的。续航从 45 公里衰减到现在的 25 公里左右。已经算不错了。里面的控制器我自己更换过一个，其实这玩意的组成特别简单（电池+控制器+车架+轮子）就没了。 只要车架不坏，其他任何配件坏了我都可以自己更换了。（车架非常结实，感觉正常使用不会坏）
 <Pictures :width="300">
-<img src="./04/04-1.jpeg" />
-<img src="./04/04-2.jpeg" />
-<img src="./04/04-3.jpeg" />
-<img src="./04/04-4.jpeg" />
+<img loading="lazy" src="./04/04-1.jpeg" />
+<img loading="lazy" src="./04/04-2.jpeg" />
+<img loading="lazy" src="./04/04-3.jpeg" />
+<img loading="lazy" src="./04/04-4.jpeg" />
 </Pictures>
 
 这个实心胎很难安装，我自己搞半天最终还是找师傅搞定。不过现在知道流程和使劲的技巧，下次我也可以自己装了。按这个轮胎的质量看，下次换胎可能又是三年以后了。

@@ -91,12 +91,12 @@
 不过，本着中华民族的优良传承，来都来了，哪怕是为了给朋友圈交作业，大家都会美化一下自己并不咋滴的行程。拼拼凑凑整了 9 张照片，嘴硬自己没有白来。
 
 <Pictures :width="300">
-<img src="./1/7.jpeg" />
-<img src="./1/8.jpeg" />
-<img src="./1/9.jpeg" />
-<img src="./1/10.jpeg" />
-<img src="./1/11.jpeg" />
-<img src="./1/12.jpeg" />
+<img loading="lazy" src="./1/7.jpeg" />
+<img loading="lazy" src="./1/8.jpeg" />
+<img loading="lazy" src="./1/9.jpeg" />
+<img loading="lazy" src="./1/10.jpeg" />
+<img loading="lazy" src="./1/11.jpeg" />
+<img loading="lazy" src="./1/12.jpeg" />
 </Pictures>
 
 ![](./1/13.jpeg)
