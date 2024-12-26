@@ -2,10 +2,10 @@
     <div
         :class="{
             'hi-video': true,
-            'hi-video--playing': isPlaying,
+            'hi-video--played': hasPlayed,
         }"
     >
-        <video controls :src="src" @play="onPlay" @pause="onPause"></video>
+        <video controls :src="src" @play="hasPlayed = true"></video>
     </div>
 </template>
 
@@ -18,15 +18,7 @@ const props = defineProps({
 });
 const { src } = toRefs(props);
 
-const isPlaying = ref(false);
-
-function onPlay() {
-    isPlaying.value = true;
-}
-
-function onPause() {
-    isPlaying.value = false;
-}
+const hasPlayed = ref(false);
 </script>
 <style>
 @media (max-width: 750px) {
@@ -46,7 +38,7 @@ function onPause() {
             opacity: 0.2;
             /* 加个透明度，否则看不见播放按钮 */
         }
-        &.hi-video--playing {
+        &.hi-video--played {
             &::after {
                 display: none;
             }
