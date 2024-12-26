@@ -11,6 +11,7 @@
 
 <script setup>
 // 移动端视频不会提前加载，所以需要一个默认图片，否则黑漆漆的很丑
+// poster 不能自适应，所以用伪元素
 import { toRefs, ref } from 'vue';
 const props = defineProps({
     src: String,
@@ -43,6 +44,7 @@ function onPause() {
             pointer-events: none;
             background-position: center;
             opacity: 0.2;
+            /* 加个透明度，否则看不见播放按钮 */
         }
         &.hi-video--playing {
             &::after {
