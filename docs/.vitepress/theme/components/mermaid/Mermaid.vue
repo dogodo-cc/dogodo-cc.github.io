@@ -92,7 +92,7 @@ onMounted(async () => {
 onUnmounted(() => mut.disconnect());
 
 const renderChart = async () => {
-    console.log('rendering chart' + props.id + code.value);
+    // console.log('rendering chart' + props.id + code.value);
     const hasDarkClass = document.documentElement.classList.contains('dark');
     const mermaidConfig = {
         securityLevel: 'loose',
