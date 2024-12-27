@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
-import type { DefaultTheme } from 'vitepress';
-import { withMermaid } from 'vitepress-plugin-mermaid';
+import MermaidExample from './mermaid-markdown-all.js';
 
 const config = defineConfig({
     title: '甜甜的泥土',
@@ -148,6 +147,13 @@ const config = defineConfig({
     },
     markdown: {
         lineNumbers: false,
+        theme: {
+            light: 'github-light',
+            dark: 'github-dark',
+        },
+        config: (md) => {
+            MermaidExample(md);
+        },
     },
     sitemap: {
         hostname: 'https://weihai.dogodo.cc/',
@@ -169,4 +175,4 @@ const config = defineConfig({
     },
 });
 
-export default withMermaid(config);
+export default config;
