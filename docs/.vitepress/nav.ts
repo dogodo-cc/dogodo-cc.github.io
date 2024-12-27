@@ -5,14 +5,14 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
         {
             text: '2024',
             items: [
-                { text: '年终总结', link: '/article/2024/year-end/index.md' },
+                { text: '回忆-毕业十年', link: '/article/2024/10years/index.md' },
+                { text: '2024 年终总结', link: '/article/2024/year-end/index.md' },
                 { text: '云南旅行', link: '/article/2024/yunnan/index.md' },
                 { text: '骑行经验', link: '/article/2024/bicycle/index.md' },
                 { text: '我的桌面', link: '/article/2024/desktop/index.md' },
                 { text: '回忆-我和黑莓', link: '/article/2024/blackberry/index.md' },
                 { text: '回忆-暑假工和兼职', link: '/article/2024/part-time-job/index.md' },
                 { text: '回忆-我的租房经历', link: '/article/2024/rental-houses/index.md' },
-                { text: '回忆-毕业十年', link: '/article/2024/10years/index.md' },
             ],
         },
         {
