@@ -15,7 +15,7 @@ import { ref, onMounted } from 'vue';
 import { useRoute } from 'vitepress';
 
 const route = useRoute();
-const showLock = ref(true);
+const showLock = ref(false);
 
 function onInput(e) {
     const value = e.target.value;
@@ -31,6 +31,8 @@ onMounted(() => {
     const hasValid = Boolean(localStorage.getItem(path));
     if (hasValid) {
         showLock.value = false;
+    } else {
+        showLock.value = true;
     }
 });
 </script>
