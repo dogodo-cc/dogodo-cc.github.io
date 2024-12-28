@@ -40,15 +40,14 @@ onMounted(() => {
     & .lock-panel-bg {
         position: absolute;
         inset: -10px;
-        z-index: 9999;
-        opacity: 1;
+        z-index: calc(var(--vp-z-index-sidebar) - 2);
         backdrop-filter: blur(6px);
         filter: blur(6px);
     }
     & .lock-panel {
         position: absolute;
         inset: 0;
-        z-index: 10000;
+        z-index: calc(var(--vp-z-index-sidebar) - 1);
         display: flex;
         justify-content: center;
         & input {
