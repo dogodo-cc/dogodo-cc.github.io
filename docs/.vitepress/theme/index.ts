@@ -7,6 +7,7 @@ import Pictures from './components/pictures-scroll-x.vue';
 import Tip from './components/picture-tip.vue';
 
 import Mermaid from './components/mermaid/Mermaid.vue';
+import Lock from './components/lock.vue';
 
 // https://www.antdv.com/docs/vue/introduce-cn
 import { Row, Col } from 'ant-design-vue';
@@ -19,5 +20,6 @@ export default {
         app.component('Pictures', Pictures);
         app.component('Tip', Tip);
         app.component('Mermaid', Mermaid);
+        app.component('lock', Lock);
     },
 } satisfies Theme;
