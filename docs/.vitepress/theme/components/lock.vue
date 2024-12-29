@@ -4,7 +4,7 @@
         <div class="lock-panel">
             <div>
                 <input type="tel" placeholder="请输入我的手机号" @input="onInput" />
-                <p>本文仅好友可见</p>
+                <p>仅好友可见</p>
             </div>
         </div>
     </div>
