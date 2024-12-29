@@ -81,9 +81,21 @@ git cherry-pick commitId1 commitId2 将其他分支的 commit 摘取过来
 
 具体流程可以参考下图：
 
-<picture>
-  <img src="./git.jpg" alt="Image">
-</picture>
+```mermaid
+flowchart LR
+    origin[公共仓库]
+    originSelf[私人仓库]
+    originLocal[(本地仓库)]
+
+    origin -- fork --> originSelf
+
+    originSelf -- pull request --> origin
+
+    origin -- pull --> originLocal
+
+    originLocal -- push --> originSelf
+
+```
 
 所以我们需要用到 Git 的多 origin 管理功能：
 
