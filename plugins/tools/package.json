@@ -1,8 +1,0 @@
-{
-  "name": "@90s/tools",
-  "version": "0.0.1",
-  "description": "工具函数",
-  "main": "./main.js",
-  "private": true,
-  "type": "module"
-}
