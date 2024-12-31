@@ -46,7 +46,7 @@ const code = ref(decodeURIComponent(props.graph));
 const ctrlSymbol = ref('Ctrl');
 if (inBrowser) {
     if (navigator.userAgentData) {
-        ctrlSymbol.value = navigator.userAgentData.platform.includes('Mac') ? '⌘' : 'Ctrl';
+        ctrlSymbol.value = navigator.userAgentData.platform.toLowerCase().includes('mac') ? '⌘' : 'Ctrl';
     } else {
         const userAgent = navigator.userAgent.toLowerCase();
         ctrlSymbol.value = userAgent.includes('mac') ? '⌘' : 'Ctrl';
