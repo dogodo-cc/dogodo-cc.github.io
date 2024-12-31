@@ -19,6 +19,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue';
+import { inBrowser } from 'vitepress';
 import { render } from './mermaid';
 
 const props = defineProps({
@@ -42,9 +43,17 @@ const props = defineProps({
 
 const svg = ref('');
 const code = ref(decodeURIComponent(props.graph));
-const ctrlSymbol = ref(navigator.platform.includes('Mac') ? '⌘' : 'Ctrl');
+const ctrlSymbol = ref('Ctrl');
+if (inBrowser) {
+    if (navigator.userAgentData) {
+        ctrlSymbol.value = navigator.userAgentData.platform.includes('Mac') ? '⌘' : 'Ctrl';
+    } else {
+        const userAgent = navigator.userAgent.toLowerCase();
+        ctrlSymbol.value = userAgent.includes('mac') ? '⌘' : 'Ctrl';
+    }
+}
 const editableContent = ref(null);
-const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
+const isFirefox = inBrowser ? navigator.userAgent.toLowerCase().includes('firefox') : false;
 const contentEditable = ref(isFirefox ? 'true' : 'plaintext-only');
 
 let mut = null;
