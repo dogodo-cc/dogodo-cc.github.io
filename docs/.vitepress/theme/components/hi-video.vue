@@ -5,7 +5,7 @@
             'hi-video--played': hasPlayed,
         }"
     >
-        <video controls :src="src" @play="hasPlayed = true"></video>
+        <video preload="metadata" controls :src="src" @play="hasPlayed = true"></video>
     </div>
 </template>
 
