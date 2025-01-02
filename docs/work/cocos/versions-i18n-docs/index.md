@@ -456,7 +456,20 @@ github workflow 在提取到 `all` 这个关键词，就会全量构建所有版
 
 整个文档的构建和发布的大体流程如下：
 
-![](./assets/workflow.png)
+```mermaid
+graph BT;
+    Git([GitHub actions])
+    OSS[(Database)]
+    master(🧑‍💻 developer)
+    nginx>nginx 解析地址中的版本]
+    user(💻 用户访问 https:\/\/docs.cocos.com\/creator\/3.8\/manual\/zh)
+
+    master -- git push --> Git
+    Git -- 上传 dist --> OSS
+
+    nginx -- 获取静态数据 --> OSS
+    user -- request --> nginx
+```
 
 ## 总结
 

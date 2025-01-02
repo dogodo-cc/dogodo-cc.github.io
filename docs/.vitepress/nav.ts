@@ -3,6 +3,10 @@ import type { DefaultTheme } from 'vitepress';
 export function getArticles(): DefaultTheme.SidebarItem[] {
     return [
         {
+            text: '2025',
+            items: [{ text: '个人数据存储方案', link: '/article/2025/userdata/index.md' }],
+        },
+        {
             text: '2024',
             items: [
                 { text: '回忆-毕业十年', link: '/article/2024/10years/index.md' },
@@ -89,7 +93,7 @@ export function getWorks(): DefaultTheme.SidebarItem[] {
                 { text: 'GitHub名称映射', link: '/work/cocos/github-ids/index.md' },
                 { text: 'Hello build', link: '/work/cocos/hello-build.md' },
                 { text: '短链接', link: '/work/cocos/short-url/index.md' },
-                { text: '多版本多语言文档', link: '/work/cocos/多版本多语言文档/index.md' },
+                { text: '多版本多语言文档', link: '/work/cocos/versions-i18n-docs/index.md' },
                 { text: 'Creator 插件开发', link: '/work/cocos/create-cocos-plugin/index.md' },
             ],
         },
