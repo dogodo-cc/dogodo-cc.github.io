@@ -49,3 +49,26 @@ jobs:
             - name: 项目部署 - 更新文档(排除了图片和视频等资源)
               if: contains(github.event.head_commit.message, 'publish:docs')
               run: ossutil cp -rf ./docs/.vitepress/dist oss://90s/ --exclude *.jpeg --exclude *.jpg --exclude *.mov --exclude *.png
+
+        # 和 steps 同级的后置任务
+        - name: 发送失败通知邮件
+          if: failure() # 仅在 job 失败时触发
+          uses: dawidd6/action-send-mail@v3
+          with:
+              server_address: smtp.qq.com
+              server_port: 465
+              username: ${{ secrets.EMAIL_USERNAME }}
+              password: ${{ secrets.EMAIL_PASSWORD }}
+              subject: "GitHub Actions 发布到 OSS 流程失败"
+              to: "741484865@qq.com"
+              from: "GitHub Actions <${{ secrets.EMAIL_USERNAME }}>"
+              body: |
+                  您好，
+
+                  您的 GitHub Actions 工作流 "发布到 OSS" 在执行过程中失败。
+                  请检查以下工作流运行日志以获取更多信息：
+
+                  ${{ github.run_id }}
+
+                  --
+                  GitHub Actions 自动通知
