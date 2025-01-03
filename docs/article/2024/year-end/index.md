@@ -60,7 +60,7 @@
 
 于是心一横，决定彻底重构它，毕竟之前维护文档的人离职了，这个锅丢到我手上了。
 
-具体可以看 [多版本多语言的文档系统设计](../../../work/cocos/versions-i18n-docs1/index.md)
+具体可以看 [多版本多语言的文档系统设计](../../../work/cocos/versions-i18n-docs/index.md)
 
 ### 提升了 Dashboard 的编辑器下载成功率
 
