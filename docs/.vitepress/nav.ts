@@ -20,15 +20,6 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
             ],
         },
         {
-            text: '2014',
-            items: [
-                {
-                    text: '小小出租屋',
-                    link: '/article/2014/小小出租屋.md',
-                },
-            ],
-        },
-        {
             text: '2013',
             items: [
                 {
