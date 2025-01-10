@@ -128,7 +128,7 @@ npm create cocos-plugin@latest
 | 小乌龟   | 小乌堆   |
 | 开门     | 胎门     |
 
-::: details GTP 科普
+::: details GPT 科普
 小孩在语言发育过程中不能发出某些音，如 /g/ 和 /k/，而可以发出类似的音如 /d/ 和 /t/，主要与以下因素有关：
 
 ### 发音位置的难度
