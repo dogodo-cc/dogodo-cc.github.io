@@ -10,7 +10,7 @@ hero:
     tagline: 让工作更有趣 让生活更美好
     image:
         src: /logo.png
-        alt: 住海沧的出租屋桌面
+        alt: logo
     actions:
         - theme: brand
           text: 关于我
