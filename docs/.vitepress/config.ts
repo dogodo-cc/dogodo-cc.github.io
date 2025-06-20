@@ -4,6 +4,7 @@ import { getArticles, getWorks } from './nav';
 import MermaidExample from './mermaid-markdown-all.js';
 
 const config = defineConfig({
+    base: '/90s/',
     title: '甜甜的泥土',
     titleTemplate: '甜甜的泥土',
     description: '记录工作，生活，女儿成长',
@@ -172,7 +173,6 @@ const config = defineConfig({
                 },
             ],
         },
-        base: '/90s/',
     },
 });
 
