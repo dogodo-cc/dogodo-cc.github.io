@@ -3,8 +3,10 @@ import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
 import MermaidExample from './mermaid-markdown-all.js';
 
+const base = '/90s/';
+
 const config = defineConfig({
-    base: '/90s/',
+    base: base,
     title: '甜甜的泥土',
     titleTemplate: '甜甜的泥土',
     description: '记录工作，生活，女儿成长',
@@ -83,13 +85,13 @@ const config = defineConfig({
             {
                 text: '文字',
                 link: '/article/',
-                activeMatch: '^/article/',
+                activeMatch: '/article/',
                 // items: getArticles() as DefaultTheme.NavItemChildren[],
             },
             {
                 text: '工作',
                 link: '/work/',
-                activeMatch: '^/work/',
+                activeMatch: '/work/',
             },
             // {
             //     text: '工具',
@@ -120,8 +122,14 @@ const config = defineConfig({
         ],
 
         sidebar: {
-            '/article/': getArticles(),
-            '/work/': getWorks(),
+            '/article': {
+                base: '/article/',
+                items: getArticles(),
+            },
+            '/work/': {
+                base: '/work/',
+                items: getWorks(),
+            },
         },
 
         docFooter: {
