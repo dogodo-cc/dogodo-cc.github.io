@@ -172,6 +172,7 @@ const config = defineConfig({
                 },
             ],
         },
+        base: '/90s/',
     },
 });
 
