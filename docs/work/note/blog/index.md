@@ -66,6 +66,14 @@ pageClass: about-this-site
 
 经过这一番折腾，本站终于有了一个让我比较满意的 PWA 的表现形式。
 
+## 部署在 GitHub
+
+GitHub 发布静态页面之后的地址是如下格式： `https://dogodo-cc.github.io/blog/` ，假设你的仓库名为 `blog`。
+
+如果我希望地址是 `https://dogodo-cc.github.io/` 这样简短的方式，那么就需要将仓库名称从 `blog` 改为 `dogodo-cc.github.io`，这是 github 的默认规则。
+
+由于本站希望以 PWA 的方式发布，所以将仓库名改成了 `dogodo-cc.github.io`，因为 PWA 在发布的时候是不会带二级路径的。
+
 ## 遗留的问题
 
 现在 PC 的体验是保留和 `vitepress` 一样。手机端进行了如上所述的定制。在 PWA 的模式下，和微信应用内打开都是非常完美的。但是在 Safari 上，只要点击一次锚点，那个页头部分就无法保持定位了。
