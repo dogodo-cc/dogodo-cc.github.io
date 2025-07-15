@@ -6,14 +6,13 @@
         "preview": "vitepress preview docs"
     },
     "devDependencies": {
-        "vitepress": "^1.5.0"
+        "vitepress": "^1.6.3"
     },
     "dependencies": {
-        "@mermaid-js/mermaid-zenuml": "^0.2.0",
-        "ant-design-vue": "^4.2.6",
-        "mermaid": "^11.4.1"
+        "@mermaid-js/mermaid-zenuml": "^0.2.1",
+        "mermaid": "^11.8.1"
     },
     "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "4.29.1"
+        "@rollup/rollup-linux-x64-gnu": "4.45.0"
     }
 }

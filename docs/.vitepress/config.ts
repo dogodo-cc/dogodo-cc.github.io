@@ -32,8 +32,8 @@ const config = defineConfig({
         ['meta', { property: 'og:url', content: 'https://dogodo-cc.github.io/90s/' }],
 
         // #region snippet
-        ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
+        ['link', { rel: 'manifest', href: '/90s/manifest.webmanifest' }],
+        ['link', { rel: 'apple-touch-icon', href: '/90s/apple-touch-icon-180x180.png' }],
         // #endregion snippet
 
         // 在手机上 默认用暗色主题，因为 manifest 配置那边主题是暗色的，体验效果更好

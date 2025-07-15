@@ -33,14 +33,15 @@
 时间来到大学时期，由于有去做兼职，并且黑莓的的旧型号也不贵，我就买了几个自己非常喜欢的经典型号。开始在 52blackberry 上面下载各种主题，收集好看的壁纸等。
 
 当年收藏的壁纸：
-<a-row>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-1.jpg" /></a-col>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-2.jpg" /></a-col>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-3.jpg" /></a-col>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-4.jpg" /></a-col>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-5.jpg" /></a-col>
-<a-col :span="8"><img loading="lazy" src="./assets/wallpaper/wallpaper-6.jpg" /></a-col>
-</a-row>
+
+<div class="list">
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-1.jpg" /></div>
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-2.jpg" /></div>
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-3.jpg" /></div>
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-4.jpg" /></div>
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-5.jpg" /></div>
+<div class="list-item"><img loading="lazy" src="./assets/wallpaper/wallpaper-6.jpg" /></div>
+</div>
 
 <br/>
 
@@ -93,9 +94,24 @@
 
 这些截图就是 10 多年前我使用黑莓 9000 的模样：
 
-<a-row :gutter="[4,4]">
-    <a-col v-for="pic in pictures" :key="pic" :span="12" :md="{span: 8}"><img loading="lazy" :src="pic" /></a-col>
-</a-row>
+<div class="list">
+    <div class="list-item" v-for="pic in pictures" :key="pic" :span="12" :md="{span: 8}"><img loading="lazy" :src="pic" /></div>
+</div>
+
+<style lang="css">
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list-item {
+        width: 33%;
+        margin-left: calc((100% - 33% * 3) / 2);
+        margin-top: calc((100% - 33% * 3) / 2);
+    }
+    .list-item:nth-child(3n - 2) {
+        margin-left: 0
+    }
+</style>
 
 <script setup>
     import pic_1 from './assets/9000/screenshot/1.jpg';
