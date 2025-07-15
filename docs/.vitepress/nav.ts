@@ -6,7 +6,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
             text: '2025',
             items: [
                 { text: '个人数据存储方案', link: '2025/userdata/index.md' },
-                { text: '自行车', link: '2025/bike/index.md' },
+                { text: '自行车选购思路', link: '2025/bike/index.md' },
             ],
         },
         {
