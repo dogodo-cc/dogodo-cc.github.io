@@ -3,10 +3,8 @@ import { fileURLToPath, URL } from 'node:url';
 import { getArticles, getWorks } from './nav';
 import MermaidExample from './mermaid-markdown-all.js';
 
-const base = '/90s/';
-
 const config = defineConfig({
-    base: base,
+    base: '/',
     title: '甜甜的泥土',
     titleTemplate: '甜甜的泥土',
     description: '记录工作，生活，女儿成长',
@@ -28,12 +26,12 @@ const config = defineConfig({
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
-        ['meta', { property: 'og:image', content: 'https://dogodo-cc.github.io/90s/maskable-icon-512x512.png' }],
-        ['meta', { property: 'og:url', content: 'https://dogodo-cc.github.io/90s/' }],
+        ['meta', { property: 'og:image', content: 'https://dogodo-cc.github.io/maskable-icon-512x512.png' }],
+        ['meta', { property: 'og:url', content: 'https://dogodo-cc.github.io/' }],
 
         // #region snippet
-        ['link', { rel: 'manifest', href: '/90s/manifest.webmanifest' }],
-        ['link', { rel: 'apple-touch-icon', href: '/90s/apple-touch-icon-180x180.png' }],
+        ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
+        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png' }],
         // #endregion snippet
 
         // 在手机上 默认用暗色主题，因为 manifest 配置那边主题是暗色的，体验效果更好
@@ -165,7 +163,7 @@ const config = defineConfig({
         },
     },
     sitemap: {
-        hostname: 'https://dogodo-cc.github.io/90s/',
+        hostname: 'https://dogodo-cc.github.io/',
     },
     vite: {
         resolve: {
