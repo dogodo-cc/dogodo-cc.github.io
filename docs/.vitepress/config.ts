@@ -28,8 +28,8 @@ const config = defineConfig({
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
         ['meta', { property: 'og:title', content: '甜甜的泥土 | 袁炜海的互联网自留地' }],
         ['meta', { property: 'og:site_name', content: '甜甜的泥土' }],
-        ['meta', { property: 'og:image', content: 'https://weihai.dogodo.cc/maskable-icon-512x512.png' }],
-        ['meta', { property: 'og:url', content: 'https://weihai.dogodo.cc/' }],
+        ['meta', { property: 'og:image', content: 'https://dogodo-cc.github.io/90s/maskable-icon-512x512.png' }],
+        ['meta', { property: 'og:url', content: 'https://dogodo-cc.github.io/90s/' }],
 
         // #region snippet
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
@@ -165,7 +165,7 @@ const config = defineConfig({
         },
     },
     sitemap: {
-        hostname: 'https://weihai.dogodo.cc/',
+        hostname: 'https://dogodo-cc.github.io/90s/',
     },
     vite: {
         resolve: {
