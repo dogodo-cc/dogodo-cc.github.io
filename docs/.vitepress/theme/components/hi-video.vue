@@ -30,7 +30,7 @@ const hasPlayed = ref(false);
             display: block;
             position: absolute;
             inset: 0;
-            background-image: url('https://weihai.dogodo.cc/assets/2.DyYdrqIQ.jpeg');
+            background-image: url('https://90s.oss-cn-hangzhou.aliyuncs.com/assets/2.DyYdrqIQ.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
             pointer-events: none;

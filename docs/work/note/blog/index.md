@@ -22,7 +22,7 @@ pageClass: about-this-site
 
 如果你想体验 PWA ，那么简单操作几步即可：
 
-1、 打开手机浏览器（苹果: safair | 安卓: chrome）在网址输入框输入 `weihai.dogodo.cc`
+1、 打开手机浏览器（苹果: safair | 安卓: chrome）在网址输入框输入 `https://dogodo-cc.github.io/`
 
 2、 点击浏览器的分享按钮，在弹出的选项中点击 `添加到主屏幕`
 
