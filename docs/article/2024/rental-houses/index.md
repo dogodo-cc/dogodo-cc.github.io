@@ -93,7 +93,7 @@
 
 可是，双子塔的公司解散了，我们新工作换到了湖里区，所以我们就从海沧搬到湖里了。
 
-<video src="https://90s.oss-cn-hangzhou.aliyuncs.com/videos/海沧石塘出租屋.mov" controls />
+<video src="./assets/haichan/海沧石塘出租屋.mp4" controls />
 <Tip>一段当时小房间的视频</Tip>
 
 ## 湖里高林社区 ☹️

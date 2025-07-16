@@ -30,7 +30,8 @@ const hasPlayed = ref(false);
             display: block;
             position: absolute;
             inset: 0;
-            background-image: url('https://90s.oss-cn-hangzhou.aliyuncs.com/assets/2.DyYdrqIQ.jpeg');
+            /* 云南旅行里 玥玥的照片 */
+            background-image: url('/assets/2.DyYdrqIQ.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
             pointer-events: none;

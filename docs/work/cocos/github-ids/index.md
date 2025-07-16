@@ -13,7 +13,7 @@
 插件那边会获取到最新的数据映射表。通过如下粗暴的方式：
 
 ```
-const url = `https://90s.oss-cn-hangzhou.aliyuncs.com/github-ids/github-ids.json?v=${Date.now()}`;
+const url = `https://raw.githubusercontent.com/cocos-creator/fe-team/main/projects/chrome-tools/github-ids.json?v=${Date.now()}`;
 ```
 
 :::tip
@@ -53,7 +53,7 @@ const url = `https://90s.oss-cn-hangzhou.aliyuncs.com/github-ids/github-ids.json
 
 ```js
 function replaceIds() {
-    const url = `https://90s.oss-cn-hangzhou.aliyuncs.com/github-ids/github-ids.json?v=${Date.now()}`;
+    const url = `https://raw.githubusercontent.com/cocos-creator/fe-team/main/projects/chrome-tools/github-ids.json?v=${Date.now()}`;
 
     // 获取数据
     fetch(url)
