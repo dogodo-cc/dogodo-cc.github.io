@@ -5,7 +5,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
         {
             text: '2025',
             items: [
-                { text: '个人数据存储方案', link: '2025/userdata/index.md' },
+                { text: '数字资产管理', link: '2025/userdata/index.md' },
                 { text: '自行车选购思路', link: '2025/bike/index.md' },
             ],
         },
@@ -18,7 +18,7 @@ export function getArticles(): DefaultTheme.SidebarItem[] {
                 { text: '我的桌面', link: '2024/desktop/index.md' },
                 { text: '回忆-我和黑莓', link: '2024/blackberry/index.md' },
                 { text: '回忆-暑假工和兼职', link: '2024/part-time-job/index.md' },
-                { text: '回忆-我的租房经历', link: '2024/rental-houses/index.md' },
+                { text: '回忆-租房经历', link: '2024/rental-houses/index.md' },
                 { text: '回忆-毕业十年', link: '2024/10years/index.md' },
             ],
         },
